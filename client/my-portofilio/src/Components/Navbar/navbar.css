@@ -1,0 +1,62 @@
+.navbar-main-section{
+      width:100%;
+      height: max-content;
+      background-color: black;
+      color:white;
+
+
+}
+.navigation-container{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      
+}
+.nav-pages-container{
+      display: flex;
+      align-items: center;
+      gap:1rem;
+      justify-content: space-between;
+      margin: 1rem;
+   
+
+}
+.circle-name{
+      background-color: yellowgreen;;
+      height:30px;
+      width:30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;;
+}
+.circle-name p{
+       transform: rotate(10deg); 
+
+}
+.nav-pages-container *{
+color:orange;
+font-size: 1.1rem;
+margin-right: 1rem;
+}
+.contact-page{
+      width: max-content;
+      height: max-content;
+      color:white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid yellowgreen;
+      padding: 3px 20px 5px 20px;
+      border-radius: 40px;
+      background-color: yellowgreen;
+}
+
+.logo-name{
+      color:orange;
+      padding: 4px 20px;
+      border-radius: 50px;
+      border: 1.4px solid white;
+
+}
