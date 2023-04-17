@@ -1,14 +1,49 @@
 import React from "react";
 import "../../Pages/Home/home.css";
+import { useState } from "react";
 const Projects = () => {
+  const [activeCategory, setActiveCategory] = useState("games");
+
+  const handleClick = (value) => {
+    setActiveCategory(value);
+  };
   return (
     <div className="mother-projects-container">
       <h1 className="latest-projects">My latest Projects</h1>
+      <div className="underline-project"></div>
       <div className="filter-div">
-            <h3>Games</h3>
-            <h3>Frontend</h3>
-            <h3>Fullstack</h3>
-            <h3>Vanilla Javascript</h3>
+        <h3
+          onClick={() => handleClick("games")}
+          className={`${
+            activeCategory === "games" ? "active-cat" : "passive-cat"
+          }`}
+        >
+          Games
+        </h3>
+        <h3
+          onClick={() => handleClick("frontend")}
+          className={`${
+            activeCategory === "frontend" ? "active-cat" : "passive-cat"
+          }`}
+        >
+          Frontend
+        </h3>
+        <h3
+          onClick={() => handleClick("fullstack")}
+          className={`${
+            activeCategory === "fullstack" ? "active-cat" : "passive-cat"
+          }`}
+        >
+          Fullstack
+        </h3>
+        <h3
+          onClick={() => handleClick("vanilla")}
+          className={`${
+            activeCategory === "vanilla" ? "active-cat" : "passive-cat"
+          }`}
+        >
+          Vanilla Javascript
+        </h3>
       </div>
       <div className="projects-container">
         <div className="individual-project">
@@ -30,7 +65,6 @@ const Projects = () => {
           />
         </div>
         <div className="individual-project">
-        
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiBi484sztGHzeIu-rZUeV4ZSQUVpSvGEuTQ&usqp=CAU"
             alt=""

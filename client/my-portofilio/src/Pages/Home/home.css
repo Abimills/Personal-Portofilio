@@ -201,7 +201,7 @@ color:white;
       justify-content: center;
       color:black;
       font-family: 'Raleway', sans-serif;
-font-weight: 700;
+      font-weight: 700;
 }
 .contact-me-circle:hover{
        border-radius: 14% 86% 35% 65% / 59% 74% 26% 41% ;
@@ -213,7 +213,7 @@ font-weight: 700;
       margin: 0 2rem;
 }
 .marble-pic{
-      width: 50%;
+      width: 300px;
       height: 30px;
       border-radius: 20px;
       object-fit: cover;
@@ -221,6 +221,9 @@ font-weight: 700;
 }
 .my-about-para{
       max-width: 600px;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 400;
+      line-height: 25px;
 }
 
 .projects-container{
@@ -241,6 +244,16 @@ padding: 10px;
       color: white;
       text-align: center;
       text-transform: uppercase;
+      margin-top: 9rem;
+}
+.underline-project{
+      content:none;
+      width: 150px;
+      height:5px;
+      background-color: aquamarine;
+      margin: 0 auto;
+      margin-top: -0.5rem;
+      margin-bottom: 2rem;
 }
 .filter-div{
       color:white;
@@ -250,14 +263,23 @@ padding: 10px;
       justify-content: center;
       gap:9rem;
 }
-.filter-div *{
+
+.passive-cat{
       text-transform: uppercase;
       border: 1px solid orange;
-      padding: 10px;
+      padding: 10px 25px;
       border-radius: 20px;
+      cursor: pointer;
+      background-color: transparent;
 }
-.filter-div :first-child{
+
+.active-cat{
 background-color: orange;
+  text-transform: uppercase;
+      border: 1px solid orange;
+      padding: 10px 25px;
+      border-radius: 20px;
+      cursor: pointer;
 }
 .contact-us-page-container{
       width: 100%;
@@ -362,27 +384,37 @@ padding: 10px;
       border: 1px solid yellow;
       margin-top: 1rem;
 }
+.name-about-me-container{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+}
+.name-about-me-container div{
+      
+      display: inline-block;
+      white-space: nowrap; /* prevent line breaks */
+
+}
+
 .my-about-name{
    text-transform: uppercase;
-  white-space: nowrap; /* prevent line breaks */
   overflow: hidden;
    /* hide overflowing text */
-  animation: typing 3s steps(90) forwards ;
+  animation: typing 3s steps(90) forwards  ;
   position: relative; 
   /* position cursor relative to text */
   display: inline-block; /* make cursor appear next to text */
+  text-align: center;
 }
 
 .cursor {
   position: absolute;
   margin-top: 2rem;
-  /* position cursor relative to text */
-  /* top: 0; */
-  /* right: -10px; */
-  width: 1px;
-  height: 25px;
-  color:white;
-  background-color: white;
+  margin-left: 0.2rem;
+  width: 2px;
+  height: 23px;
+  color:rgb(255, 0, 0);
+  background-color: rgb(253, 0, 0);
   animation: cursor 4s infinite;
 }
 @keyframes typing {
@@ -390,14 +422,18 @@ padding: 10px;
     width: 0; /* start with zero width */
   }
   to {
-    width: 24%; /* gradually increase width to 100% */
+    width: 104%; /* gradually increase width to 100% */
   }
 }
 @keyframes cursor {
   from, to {
     background-color: white;
   }
-  10% {
+
+  50% {
     background-color: transparent;
+  }
+  100% {
+    background-color: white;
   }
 }
