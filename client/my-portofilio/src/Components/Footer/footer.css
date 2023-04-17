@@ -1,0 +1,35 @@
+.footer-container{
+      width: 100%;
+      color:white;
+      display: flex;
+      align-items: center;
+      margin-top: 1rem;
+      gap:1rem;
+      border-top: 1px solid orange;
+}
+.footer-container h1{
+      text-transform: uppercase;
+      max-width: 500px;
+      line-height: 40px;
+      margin-top: -3rem;
+      padding: 10px;
+}
+.pages-container h3{
+font-weight: 100;
+
+}
+.social-media-icons{
+      display: flex;
+      align-items: center;
+      gap:1rem;
+      margin-left: 4rem;
+}
+.social-media-icons *{
+      color:aquamarine;
+      padding: 5px;
+      font-size: 1.1rem;
+}
+.copy-right-footer{
+      text-transform: uppercase;
+      font-weight: 100;
+}
