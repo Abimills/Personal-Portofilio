@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,600;0,900;1,100;1,500;1,700;1,900&display=swap');
+
 .footer-container{
       width: 100%;
       color:white;
@@ -5,18 +8,24 @@
       align-items: center;
       margin-top: 1rem;
       gap:1rem;
-      border-top: 1px solid orange;
+      border-top: 1px solid aqua;
 }
 .footer-container h1{
       text-transform: uppercase;
       max-width: 500px;
       line-height: 40px;
       margin-top: -3rem;
+      color:aqua;
+      font-size: 1.5rem;
+      font-family: 'Lobster', cursive;   
+
+      
       padding: 10px;
 }
 .pages-container h3{
-font-weight: 100;
+      font-family: 'Lobster', cursive;   
 
+cursor: pointer;
 }
 .social-media-icons{
       display: flex;
@@ -25,11 +34,27 @@ font-weight: 100;
       margin-left: 4rem;
 }
 .social-media-icons *{
-      color:aquamarine;
+      color:white;
       padding: 5px;
       font-size: 1.1rem;
 }
-.copy-right-footer{
-      text-transform: uppercase;
-      font-weight: 100;
+.social-media-icons :hover *{
+      color:black;
+      
 }
+.copy-right-footer{
+      text-transform: capitalize;
+      font-weight: 100;
+      font-family: 'Raleway', sans-serif;
+
+}
+
+.icons-media{
+background-color: aqua;
+color:white;
+border-radius: 50%;
+}
+.icons-media:hover{
+      background-color: white;
+}
+

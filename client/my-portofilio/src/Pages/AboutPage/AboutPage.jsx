@@ -2,7 +2,7 @@ import React from "react";
 import "../../Pages/Home/home.css";
 import { useEffect } from "react";
 import { useState } from "react";
-const HomeAboutMe = () => {
+const AboutPage = () => {
   const [text, setText] = useState("");
   const aboutMeText = `Ab a junior fullstack web developer, I've had a thrilling
     experience working with code. From my early days learning HTML and
@@ -34,7 +34,7 @@ const HomeAboutMe = () => {
       <div className="mini-about-section">
         <div className="name-about-me-container">
           <div>
-            <h1 className="my-about-name"> About Abel</h1>
+            <h1 className="my-about-name"> About Me</h1>
             <span className="cursor"></span>
           </div>
         </div>
@@ -63,4 +63,7 @@ const HomeAboutMe = () => {
   );
 };
 
-export default HomeAboutMe;
+export default AboutPage;
+
+
+

@@ -4,19 +4,12 @@ const Contact = () => {
   return (
     <div className="contact-us-page-container">
       <div className="my-logo-with-pic-contact-container">
-        <h1 className="logo-contact-page">Abel</h1>
+        <img
+          src="https://media.istockphoto.com/id/1082313882/photo/beautiful-black-man.jpg?s=612x612&w=0&k=20&c=AZOgXuAMV-oanDiwxI2SofG_E5BUcOssxFFDRS2meRA="
+          alt=""
+          className="tempo-abel-pic"
+        />
 
-        <p className="contact-me-paragraph">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-          laudantium harum beatae provident quia corrupti.
-        </p>
-
-        <div className="my-social-media-contacts">
-          <div className="linkedIn"></div>
-          <div className="whatsup"></div>
-          <div className="github"></div>
-          <div className="twitter"></div>
-        </div>
       </div>
       <div className="all-input-contact-container">
         <h1 className="get-in-touch">Get In Touch</h1>
@@ -35,7 +28,10 @@ const Contact = () => {
           <div className="text-area-container">
             <textarea type="text" placeholder="Write your comment here" />
           </div>
+          <div className="send-btn-container">
+
           <button className="send-contact-comments">Send</button>
+          </div>
         </form>
       </div>
     </div>

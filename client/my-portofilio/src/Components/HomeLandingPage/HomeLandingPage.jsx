@@ -1,17 +1,24 @@
 import React from "react";
 import "../../Pages/Home/home.css";
 import myPic from "./guy-looking-down.png";
-const HomeLanding = () => {
+const HomeLandingPage = () => {
   return (
     <div className="main-home-page-container">
       <div className="introduction-title">
-        <h1 className="my-name">H <span>ello</span></h1>
-        <h1 className="i-am-ab"> I am Ab.</h1>
-        <h1 className="my-job">
-          a fullstack <span className="developer">developer</span>
+        <h1 className="my-name">
+          H <span>ello I am Abel</span>
         </h1>
+
+        <h1 className="my-job">
+          a fullstack web <span className="developer">developer</span>
+        </h1>
+        <p className="enjoy-work">
+          {
+            "< Enjoy what you do and you will never work for the rest of your life. />"
+          }
+        </p>
         <div className="contact-me-div-btn">
-          <button className="contact-me-home-btn">Contact me</button>
+          <button className="send-contact-comments">Contact me</button>
         </div>
       </div>
 
@@ -29,4 +36,4 @@ const HomeLanding = () => {
   );
 };
 
-export default HomeLanding;
+export default HomeLandingPage;

@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,600;0,900;1,100;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 
 .all-pages-home-container{
 background-color: black;
@@ -27,49 +29,49 @@ flex-direction: column;
       margin-left: 20%;;
       font-size: 8rem;
       text-transform: uppercase;
-       font-family: 'Raleway', sans-serif;
-     /* font-weight: 100; */
-     color:aquamarine;
-     letter-spacing: 15px;
+       color:aqua;
+      font-family: 'Lobster', cursive;   
 }
 .my-name span{
+      font-family: 'Raleway', sans-serif;
       font-size: 3rem;
       
-      margin-left: -2.5rem;
+      margin-left: -1.7rem;
       color:white;
 
 }
-.i-am-ab{
-      color:white;
-      text-align: center;
-      text-transform: uppercase;
-      margin-top: -12.5rem;
-      margin-bottom: 8rem;
-      /* margin-left: -24px; */
-      letter-spacing: 2px;
-}
+
 
 
 .my-job{
-color:white;
-margin-left: 20%;;
-text-transform: uppercase;
-margin-top:-2rem;
+      color:white;
+      margin-left: 20%;;
+      text-transform: uppercase;
+      margin-top:-7rem;
+      margin-bottom: 4rem;
 }
 .developer{
-      color:yellow;
+      color:aqua;
+}
+.enjoy-work{
+      color:aqua;
+        margin: 0 auto;;
+        margin-top: -3rem;
+        margin-bottom: 3rem;
+        font-family: 'Lobster', cursive;
 }
 .my-pic{
       width:330px;
       height: 430px;
       box-shadow: inset 20px 20px 20px 20px rgba(244, 41, 41, 0.05),25px 35px 20px rgba(249, 128, 128, 0.05),
       25px 30px 30px rgba(252, 150, 150, 0.05),
-      inset -20px -20px 25px rgba(165, 247, 140, 0.9);
+      inset -20px -20px 25px rgba(3, 84, 92, 0.9);
       transition: 0.5s;
       display: flex;
+      border:1px solid aquamarine;
       align-items: center;
       border-radius: 67% 33% 35% 65% / 36% 19% 81% 64% ;
-      background-color: orange;
+      background-color: aquamarine;
       flex-wrap: wrap;
        animation: float 3s ease-in-out infinite;
 
@@ -218,27 +220,109 @@ color:white;
       border-radius: 20px;
       object-fit: cover;
       margin: 0 0 2rem 0;
+       box-shadow: inset 20px 20px 20px 20px rgba(11, 220, 213, 0.05),25px 35px 20px rgba(0, 229, 255, 0.05),
+      25px 30px 30px rgba(2, 223, 248, 0.05),
+      inset -20px -20px 25px rgba(13, 207, 225, 0.9);
+
 }
 .my-about-para{
       max-width: 600px;
-      font-family: 'Raleway', sans-serif;
+      font-family: 'Lobster', cursive;   
       font-weight: 400;
+font-size: 1.2rem;
       line-height: 25px;
+      color:aquamarine;
 }
 
 .projects-container{
 display: flex;
-gap : 1rem;
+gap : 5rem;
 align-items: center;
 justify-content: center;
 flex-wrap: wrap;
-padding: 10px;
+padding: 20px;
+margin-bottom: 8rem;
+}
+.individual-project{
+      width:500px;
+      height: 500px;
+      background-color: rgb(199, 247, 247);;
+      margin: 1rem 0 2rem;
+      box-shadow: inset 20px 20px 20px rgba(76, 3, 3, 0.05),
+      25px 35px 20px rgba(11, 31, 245, 0.05),
+      25px 30px 30px rgba(8, 207, 247, 0.05),
+      inset -20px -20px 25px rgba(4, 44, 52, 0.9) ;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: 0.5s ease-in-out;
+      border-radius: 62% 38% 70% 30% / 39% 37% 63% 61% ;
+}
+.individual-project:hover{
+     border-radius: 50%;; 
 }
 .individual-project img {
-      width: 400px;
-      height: 400px;
+      width: 60%;
+      height: 60%;
       object-fit: cover;
-      margin: 10px 20px;
+      border-radius: 62% 38% 70% 30% / 39% 37% 63% 61% ;
+      /* margin: 20px 20px; */
+      transition: 0.5s ease-in-out;
+
+}
+ .individual-project:hover img {
+      border-radius: 54% 46% 28% 72% / 51% 42% 58% 49% ;
+}
+.project-name{
+      color:black;
+      margin-bottom: -1rem;
+      /* margin-top: -1rem; */
+      padding: 10px;
+      padding: 10px;
+      text-transform: uppercase;
+}
+.demo-github-container{
+      display: flex;
+      padding: 10px;
+      gap: 2rem;
+      transition: 0.5s ease-in-out;
+      text-transform: capitalize;
+      align-items: center;
+      color:white;
+      justify-content:space-between;
+margin: 0 1rem;
+}
+a{
+      text-decoration: none;
+      transition: 0.5s ease-in-out;
+      
+}
+.demo-link{
+      background-color: aqua;
+      color:white;
+      transition: 0.5s ease-in-out;
+      /* padding: 10px; */
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius:62% 38% 70% 30% / 39% 37% 63% 61%  ;
+}
+.github-project{
+      color: black;;
+      cursor: pointer;
+      transition: 0.5s ease-in-out;
+ font-size: 2.1rem;
+ background-color: aqua;
+ border-radius:62% 38% 70% 30% / 39% 37% 63% 61%  ;
+}
+.github-project:hover{
+border-radius: 50%;
+}
+.demo-link:hover{
+border-radius: 50%;
 }
 .latest-projects{
       color: white;
@@ -265,21 +349,31 @@ padding: 10px;
 }
 
 .passive-cat{
+      
+      transition: 0.5s ease-in-out;
       text-transform: uppercase;
-      border: 1px solid orange;
       padding: 10px 25px;
-      border-radius: 20px;
-      cursor: pointer;
+border-radius: 40px;  
+    cursor: pointer;
       background-color: transparent;
+      color:white;
+      border:1.2px solid white;
 }
 
 .active-cat{
-background-color: orange;
+      transition: 0.5s ease-in-out;
+background-color: aquamarine;
   text-transform: uppercase;
-      border: 1px solid orange;
-      padding: 10px 25px;
-      border-radius: 20px;
+  border:1px solid aquamarine;
+         animation: float 3s ease-in-out infinite;
+
+      padding: 15px 25px;
+      border-radius: 28% 72% 69% 31% / 20% 42% 58% 80% ;
       cursor: pointer;
+        box-shadow: inset 20px 20px 20px rgba(76, 3, 3, 0.05),
+      25px 35px 20px rgba(11, 31, 245, 0.05),
+      25px 30px 30px rgba(8, 207, 247, 0.05),
+      inset -20px -20px 25px rgba(4, 44, 52, 0.9) ;
 }
 .contact-us-page-container{
       width: 100%;
@@ -287,13 +381,17 @@ background-color: orange;
       display: flex;
       color:white;
       align-items: center;
-      gap:6rem;
+      
 }
 .my-logo-with-pic-contact-container{
-      background-image: url("https://wallpaper.dog/large/10933513.jpg");
-      background-size: cover;
-      /* height: 300px; */
-
+width: 500px;
+height: 500px;
+margin-right: -8rem;
+}
+.tempo-abel-pic{
+      width:100%;
+      height: 100%;
+      object-fit: contain;
 }
 .logo-contact-page{
       background-color: orange;;
@@ -311,7 +409,8 @@ margin-top: 8rem;
 .get-in-touch{
       text-transform: uppercase;
       font-family: 'Raleway', sans-serif;
-      font-weight: 100;
+      font-weight: 700;
+      letter-spacing: 6px;
 }
 .interested-para{
       font-family: 'Raleway', sans-serif;
@@ -335,11 +434,16 @@ padding: 10px;
 }
 .contact-name-user input {
       width: 50%;
-      background-color: transparent;
-      border: 1px solid white;
+      background-color: aquamarine;
+      border: 1px solid aquamarine;
       padding: 15px;
+      outline: none;
+      color:white;
 
 
+}
+.contact-name-user input:hover{
+      background-color: transparent;
 }
 .email-container{
       width: 95.5%;
@@ -349,8 +453,10 @@ padding: 10px;
       width: 100%;
       padding: 15px;
       background-color: transparent;
-      border: 1px solid white;
-      
+      border: 1px solid aquamarine;
+       color:white;
+      outline: none;
+
 }
 
 .phone-container{
@@ -361,8 +467,11 @@ padding: 10px;
       width: 100%;
       padding: 15px;
       background-color: transparent;
-      border: 1px solid white;
+      border: 1px solid aquamarine;
       margin-top: 1rem ;
+      color:white;
+      outline: none;
+
       
 }
 .text-area-container{
@@ -373,16 +482,37 @@ padding: 10px;
       width: 100%;
       padding: 15px;
       background-color: transparent;
-      border: 1px solid white;
+      border: 1px solid aquamarine;
       margin-top: 1rem ;
-      
+       color:white;
+      outline: none;
+
+}
+.send-btn-container{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
 }
 .send-contact-comments{
-      width: 100%;
+      width: 100px;
+      height: 100px;
       padding: 10px;
-      background-color: yellow;
-      border: 1px solid yellow;
+      background-color: aquamarine;
+      border: 1px solid aquamarine;
       margin-top: 1rem;
+       box-shadow: inset 20px 20px 20px rgba(76, 3, 3, 0.05),
+      25px 35px 20px rgba(11, 31, 245, 0.05),
+      25px 30px 30px rgba(8, 207, 247, 0.05),
+      inset -20px -20px 25px rgba(4, 44, 52, 0.9) ;
+      border-radius: 62% 38% 70% 30% / 39% 37% 63% 61% ;
+transition: 0.5s ease;
+animation: float 3s ease-in-out infinite;
+/* margin-left:20rem; */
+}
+.send-contact-comments:hover{
+      border-radius: 23% 77% 66% 34% / 59% 53% 47% 41% ;
 }
 .name-about-me-container{
       width: 100%;
@@ -405,6 +535,8 @@ padding: 10px;
   /* position cursor relative to text */
   display: inline-block; /* make cursor appear next to text */
   text-align: center;
+ font-family: 'Lobster', cursive;   
+
 }
 
 .cursor {
@@ -413,9 +545,9 @@ padding: 10px;
   margin-left: 0.2rem;
   width: 2px;
   height: 23px;
-  color:rgb(255, 0, 0);
-  background-color: rgb(253, 0, 0);
-  animation: cursor 4s infinite;
+ 
+  background-color: transparent;
+  animation: cursor 4s 2;
 }
 @keyframes typing {
   from {
@@ -427,13 +559,13 @@ padding: 10px;
 }
 @keyframes cursor {
   from, to {
-    background-color: white;
-  }
+        background-color: transparent;
+}
 
-  50% {
-    background-color: transparent;
-  }
-  100% {
-    background-color: white;
+50% {
+      background-color: white;
+}
+100% {
+      background-color: transparent;
   }
 }
