@@ -6,7 +6,16 @@ import { FaInstagramSquare } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="footer-container">
-      <h1>{"< simplicity is the ultimate form of sophistication />"}</h1>
+      <div className="circle-text-container">
+        <div className="logo-name">
+          <img
+            src="https://images.squarespace-cdn.com/content/v1/60807dd06ef2ab0bfb72765e/1622308613732-G067EXJQEWW1XZBTHQBH/BlueWolfLogo-21-JS+transparent+v2.-06.png"
+            alt=""
+            className="leaf-logo"
+          />
+          <span className="abel-logo-extend">Ab.</span>
+        </div>
+      </div>
       <div className="pages-container">
         <h3>Home</h3>
         <h3>About</h3>
@@ -25,8 +34,7 @@ const Footer = () => {
         </div>
       </div>
       <p className="copy-right-footer">
-        
-        @ Abel Portfolio. All rights reserved
+        &copy; Abel Tekle Portfolio. All rights reserved
       </p>
     </div>
   );

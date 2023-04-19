@@ -51,7 +51,7 @@ const AboutPage = () => {
           </div>
           <div className="about-me-paragraph">
             <img
-              src="https://img.freepik.com/free-photo/golden-white-marble-textured-background_53876-98348.jpg"
+              src="https://t4.ftcdn.net/jpg/05/69/86/47/360_F_569864714_pJaPQL9bBdAqFYZmSVMpfr7o2vQx8cMa.jpg"
               alt=""
               className="marble-pic"
             />

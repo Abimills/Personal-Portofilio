@@ -2,10 +2,20 @@ import React from "react";
 import "./navbar.css";
 import leaf from "../HomeLandingPage/white-frame-green-leaf.jpg";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { AiFillHome } from "react-icons/ai";
+import { BsFillPersonFill } from "react-icons/bs";
+import { MdOutlineWork } from "react-icons/md";
+import { FaPhoneSquareAlt } from "react-icons/fa";
+import { useRef } from "react";
+import { useEffect } from "react";
 
 const Navbar = () => {
   const [activeBar, setActiveBar] = useState("home");
+  const navigate = useNavigate();
+  useEffect(() => {
+    window.scrollTo(0, 100);
+  });
   return (
     <main className="navbar-main-section">
       <nav className="navigation-container">
@@ -23,38 +33,42 @@ const Navbar = () => {
           </div>
           <Link to={"/home"}>
             <div
-              className={`${activeBar === "home" ? "active-nav" : "about-nav"}`}
+              className={`nav-item ${
+                activeBar === "home" ? " active-nav" : "  about-nav"
+              }`}
               onClick={() => setActiveBar("home")}
             >
-              home
+              <AiFillHome />
             </div>
           </Link>
           <Link to={"/about"}>
             <div
-              className={`${
-                activeBar === "about" ? "active-nav" : "about-nav"
+              className={`nav-item ${
+                activeBar === "about" ? "   active-nav" : "  about-nav"
               }`}
               onClick={() => setActiveBar("about")}
             >
-              about
+              <BsFillPersonFill />
             </div>
           </Link>
           <Link to={"/work"}>
             <div
-              className={`${activeBar === "work" ? "active-nav" : "work-nav"}`}
+              className={` nav-item ${
+                activeBar === "work" ? "active-nav" : "  work-nav"
+              }`}
               onClick={() => setActiveBar("work")}
             >
-              Work
+              <MdOutlineWork />
             </div>
           </Link>
           <Link to={"/contact"}>
             <div
-              className={`${
-                activeBar === "contact" ? "active-nav" : "contact-nav"
+              className={`nav-item ${
+                activeBar === "contact" ? "active-nav" : " contact-nav"
               }`}
               onClick={() => setActiveBar("contact")}
             >
-              Contact
+              <FaPhoneSquareAlt />
             </div>
           </Link>
         </div>
