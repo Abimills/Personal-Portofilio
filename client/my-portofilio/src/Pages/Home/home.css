@@ -10,6 +10,7 @@
 background-color: black;
 
 width:100%;
+
 /* min-height:100vh; */
 /* min-height: 100vh; */
 /* will change this later */
@@ -33,7 +34,7 @@ flex-direction: column;
       margin-left: 20%;;
       font-size: 8rem;
       text-transform: uppercase;
-      font-family:  cursive;
+      /* font-family:  cursive; */
       color:aqua;
       font-family: 'Raleway', sans-serif;
       /* font-weight: 100;    */
@@ -130,16 +131,20 @@ font-weight: 600;
       border-radius: 50%;;
 }
 .hero-my-pic{
+      
       width:650px;
       height: 400px;
       object-fit: cover;
       margin-left: -13rem;
+      /* background-color: red; */
       /* margin-top: -10.6rem; */
       
 
 }
 
 .main-home-page-container{
+      width: 100%;
+      
       display: flex;
       align-items: center;
       /* flex-direction: row-reverse; */
@@ -585,4 +590,120 @@ animation: float 3s ease-in-out infinite;
 100% {
       background-color: transparent;
   }
+}
+
+@media screen and (max-width:1000px){
+      .my-name{
+ margin-top: 16%;
+      margin-left: 5%;;
+      font-size: 4rem;
+      }
+      .main-home-page-container{
+            gap:1rem;
+            flex-wrap: wrap;
+      }
+      .my-job{
+      
+      /* font-weight: 100;    */
+      margin-left: 5%;;
+      text-transform: uppercase;
+      margin-top:-3rem;
+      margin-bottom: 4rem;
+}
+.my-name span{
+      font-family: 'Raleway', sans-serif;
+      /* font-family:  cursive; */
+      font-weight: 100;   
+      font-size: 3rem;
+      
+      margin-left: -0.5rem;
+      color:white;
+      
+}
+      
+}
+@media screen and (max-width:880px){
+.main-home-page-container{
+      /* flex-direction: column; */
+      /* flex-direction: row-reverse; */
+      margin-top: 3rem;
+      /* background-color: red; */
+    
+
+     
+}
+.all-pages-home-container{
+      height: max-content;
+      /* margin-bottom: 4rem; */
+}
+.my-name{
+      font-size: 3rem;
+}
+.my-name span{
+      font-size: 2rem;
+}
+.introduction-title{
+      width: 40%;
+      padding: 10px;
+}
+.my-pic{
+      width:50%;
+}
+}
+
+@media screen and (max-width:740px){
+ .main-home-page-container{
+            flex-direction: column-reverse;
+            /* flex-direction: row-reverse; */
+            margin-top: 3rem;
+            /* background-color: red; */
+          
+      
+           
+      }
+      .introduction-title{
+            width: 100%;
+            /* background-color: red; */
+      }
+      .my-name{
+            margin-bottom: 3rem;
+
+      }
+      .enjoy-work{
+            margin:0 2rem;
+      }
+      .my-pic{
+            width: 100%;
+      }
+      .send-contact-comments{
+            margin-left: -20%;;
+      }
+
+
+}
+
+@media screen and (max-width:480px){
+.my-pic{
+      width: 100%;
+      height:300px;
+}
+.hero-my-pic{
+      width: 300px;
+      height: 300px;
+      margin-left: 2rem;
+
+}
+.main-home-page-container{
+      width: 100%;
+      margin-left: 6rem;
+}
+
+}
+@media screen and (max-width:295px){
+   .my-name span{
+      margin-left: 0;
+      font-size: 1rem;
+      
+
+   }
 }

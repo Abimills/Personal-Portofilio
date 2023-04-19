@@ -9,10 +9,12 @@ import Navbar from "../../Components/Navbar/Navbar";
 
 const Home = () => {
   return (
+    <>
     <div className="all-pages-home-container">
       <HomeLanding />
 
     </div>
+    </>
   );
 };
 
