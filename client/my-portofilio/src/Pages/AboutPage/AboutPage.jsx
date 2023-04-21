@@ -2,6 +2,7 @@ import React from "react";
 import "../../Pages/Home/home.css";
 import { useEffect } from "react";
 import { useState } from "react";
+import Footer from "../../Components/Footer/Footer";
 const AboutPage = () => {
   const [text, setText] = useState("");
   const aboutMeText = `Ab a junior fullstack web developer, I've had a thrilling
@@ -35,20 +36,20 @@ const AboutPage = () => {
         <div className="name-about-me-container">
           <div>
             <h1 className="my-about-name"> About Me</h1>
-            <span className="cursor"></span>
+            
           </div>
         </div>
         <div className="about-me-pic-container">
           <div className="circle-contact-about-me">
             <p className="contact-me-circle">contact me</p>
-          </div>
           <div className="about-image-container">
             <img
               src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
               alt=""
               className="me-pic-about"
-            />
+              />
           </div>
+              </div>
           <div className="about-me-paragraph">
             <img
               src="https://t4.ftcdn.net/jpg/05/69/86/47/360_F_569864714_pJaPQL9bBdAqFYZmSVMpfr7o2vQx8cMa.jpg"

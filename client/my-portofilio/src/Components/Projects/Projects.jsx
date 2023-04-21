@@ -102,7 +102,6 @@ const Projects = () => {
     <>
       <div className="mother-projects-container">
         <p className="latest-projects">{" < My latest Projects />"}</p>
-        <div className="underline-project"></div>
         <div className="filter-div">
           <h3
             onClick={() => handleClick("game")}

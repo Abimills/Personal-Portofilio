@@ -7,15 +7,29 @@ import { AiFillHome } from "react-icons/ai";
 import { BsFillPersonFill } from "react-icons/bs";
 import { MdOutlineWork } from "react-icons/md";
 import { FaPhoneSquareAlt } from "react-icons/fa";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { IoCloseCircle } from "react-icons/io5";
 import { useRef } from "react";
 import { useEffect } from "react";
 
 const Navbar = () => {
   const [activeBar, setActiveBar] = useState("home");
+  const [openBar, setOpenBar] = useState(true);
+  const [isClose, setIsClose] = useState(false);
   const navigate = useNavigate();
-  useEffect(() => {
-    window.scrollTo(0, 100);
-  });
+
+  const handleBar = () => {
+    setIsClose(!isClose);
+    setOpenBar(!openBar);
+  };
+  const handleFalseBar = () => {
+    setIsClose(false);
+    setOpenBar(!openBar);
+  };
+  console.log(openBar);
+  // useEffect(() => {
+  //   window.scrollTo(0, 100);
+  // });
   return (
     <main className="navbar-main-section">
       <nav className="navigation-container">
@@ -25,9 +39,24 @@ const Navbar = () => {
             alt=""
             className="leaf-logo"
           />
-          <span className="abel-logo-extend">Ab.</span>
         </div>
-        <div className="nav-pages-container">
+        <div className="small-device-bar-container">
+          <div className="close-open-bar">
+            {openBar ? (
+              <GiHamburgerMenu className="open-bar-nav" onClick={handleBar} />
+            ) : (
+              <IoCloseCircle className="close-bar-nav" onClick={handleBar} />
+            )}
+          </div>
+        </div>
+        <div
+          onClick={handleFalseBar}
+          className={
+            isClose
+              ? "nav-pages-container"
+              : " nav-pages-container nav-pages-container-turn-off"
+          }
+        >
           <div className="home-page">
             <p className="home-page-navigation-p"></p>
           </div>

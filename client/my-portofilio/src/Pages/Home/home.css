@@ -7,10 +7,9 @@
 
 
 .all-pages-home-container{
-background-color: black;
 
 width:100%;
-
+margin-top: 8rem;
 /* min-height:100vh; */
 /* min-height: 100vh; */
 /* will change this later */
@@ -200,6 +199,7 @@ color:white;
 .about-me-pic-container{
       display: flex;
       align-items: center;
+      gap: 1rem;
 }
 .contact-me-circle{
       margin: 0 10px;
@@ -228,6 +228,8 @@ color:white;
       height: 300px;
       object-fit: cover;
       margin: 0 2rem;
+       border-radius: 67% 33% 35% 65% / 36% 19% 81% 64% ;
+
 }
 .marble-pic{
       width: 300px;
@@ -343,6 +345,10 @@ border-radius: 50%;
 .demo-link:hover{
 border-radius: 50%;
 }
+.mother-projects-container{
+      width: 100%;
+      background-color: red;
+}
 .latest-projects{
       color: aqua;
       text-align: center;
@@ -364,14 +370,16 @@ border-radius: 50%;
 .filter-div{
       color:white;
       width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap:9rem;
+      display: grid;
+      grid-template-columns: repeat(4,200px);
+     
+      gap:4rem;
+      margin: 3rem;;
+      
 }
 
 .passive-cat{
-      
+      width: 50%;
       transition: 0.5s ease-in-out;
       text-transform: uppercase;
       padding: 10px 25px;
@@ -550,27 +558,11 @@ animation: float 3s ease-in-out infinite;
 
 .my-about-name{
    text-transform: uppercase;
-  overflow: hidden;
-   /* hide overflowing text */
-  /* animation: typing 3s steps(90) forwards  ; */
-  position: relative; 
-  /* position cursor relative to text */
-  display: inline-block; /* make cursor appear next to text */
   text-align: center;
- /* font-family: 'Lobster', cursive;    */
 
 }
 
-.cursor {
-  position: absolute;
-  margin-top: 2rem;
-  margin-left: 0.2rem;
-  width: 2px;
-  height: 23px;
- 
-  background-color: transparent;
-  animation: cursor 4s 2;
-}
+
 @keyframes typing {
   from {
     width: 0; /* start with zero width */
@@ -591,12 +583,41 @@ animation: float 3s ease-in-out infinite;
       background-color: transparent;
   }
 }
+/* aboutpage==== */
+
+.circle-contact-about-me{
+      width:40%;
+      display: flex;
+      align-items: center;
+      margin:1rem;
+}
+.about-me-paragraph{
+      width: 60%;
+      margin:1rem;
+      
+
+}
+/* =========== */
 
 @media screen and (max-width:1000px){
       .my-name{
  margin-top: 16%;
       margin-left: 5%;;
       font-size: 4rem;
+      }
+      .about-me-pic-container{
+            flex-direction: column-reverse;
+            margin: 2rem;;
+      }
+      .about-me-paragraph{
+      width: 100%;
+      margin : 2rem;
+      
+}
+.circle-contact-about-me{
+     width: 100%;
+      margin : 2rem;
+
       }
       .main-home-page-container{
             gap:1rem;
@@ -681,21 +702,50 @@ animation: float 3s ease-in-out infinite;
 
 
 }
+@media screen and (max-width:600px){
 
+      .home-about-us-section{
+            margin-top: 6rem;
+      }
+      .my-about-name{
+            margin-bottom: -2rem;
+      }
+      .marble-pic{
+            width: 100%;
+      }
+}
 @media screen and (max-width:480px){
 .my-pic{
-      width: 100%;
-      height:300px;
+      width: 200px;
+      height:200px;
+    
 }
+ .about-me-paragraph{
+
+/* width: 350px; */
+margin: 0 auto;
+padding: 10px;
+}
+.my-about-para{
+       font-size: 0.9rem;
+
+ }
+ .marble-pic{
+      width: 100%;
+ }
+ .me-pic-about{
+      width: 90%;
+      
+ }
 .hero-my-pic{
-      width: 300px;
-      height: 300px;
-      margin-left: 2rem;
+      width: 200px;
+      height: 200px;
+      margin-left: 1rem;
 
 }
 .main-home-page-container{
       width: 100%;
-      margin-left: 6rem;
+      /* margin-left: 6rem; */
 }
 
 }
@@ -706,4 +756,30 @@ animation: float 3s ease-in-out infinite;
       
 
    }
+   .my-about-name{
+     font-size: 1.6rem;
+}
+   .my-about-para{
+      font-size: 0.7rem;
+   }
+   .hero-my-pic{
+      width: 200px;
+      height: 200px;
+      margin-left: 1rem;
+
+}
+.full-name{
+      display: none;
+}
+   .my-pic{
+      width: 150px;
+      height:150px;
+    
+}
+.hero-my-pic{
+      width: 150px;
+      height: 150px;
+      margin-left: 1rem;
+
+}
 }

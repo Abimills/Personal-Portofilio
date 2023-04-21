@@ -9,7 +9,7 @@ import AboutPage from "./Pages/AboutPage/AboutPage";
 
 function App() {
   return (
-    <>
+    <div className="app-container-everything">
       <Navbar />
       <Routes>
         <Route path="/home" element={<Home />} />
@@ -19,7 +19,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       
-    </>
+    </div>
   );
 }
 
