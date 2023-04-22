@@ -1,32 +1,20 @@
 import React from "react";
 import "./navbar.css";
-import leaf from "../HomeLandingPage/white-frame-green-leaf.jpg";
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { AiFillHome } from "react-icons/ai";
 import { BsFillPersonFill } from "react-icons/bs";
 import { MdOutlineWork } from "react-icons/md";
 import { FaPhoneSquareAlt } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseCircle } from "react-icons/io5";
-import { useRef } from "react";
-import { useEffect } from "react";
 
 const Navbar = () => {
   const [activeBar, setActiveBar] = useState("home");
-  const [openBar, setOpenBar] = useState(true);
+  const [openBar, setOpenBar] = useState(false);
   const [isClose, setIsClose] = useState(false);
-  const navigate = useNavigate();
 
-  const handleBar = () => {
-    setIsClose(!isClose);
-    setOpenBar(!openBar);
-  };
-  const handleFalseBar = () => {
-    setIsClose(false);
-    setOpenBar(!openBar);
-  };
-  console.log(openBar);
+
   // useEffect(() => {
   //   window.scrollTo(0, 100);
   // });
@@ -42,17 +30,22 @@ const Navbar = () => {
         </div>
         <div className="small-device-bar-container">
           <div className="close-open-bar">
-            {openBar ? (
-              <GiHamburgerMenu className="open-bar-nav" onClick={handleBar} />
+            {!openBar ? (
+              <GiHamburgerMenu
+                className="open-bar-nav"
+                onClick={() => setOpenBar(true)}
+              />
             ) : (
-              <IoCloseCircle className="close-bar-nav" onClick={handleBar} />
+              <IoCloseCircle
+                className="close-bar-nav"
+                onClick={() => setOpenBar(false)}
+              />
             )}
           </div>
         </div>
         <div
-          onClick={handleFalseBar}
           className={
-            isClose
+            openBar
               ? "nav-pages-container"
               : " nav-pages-container nav-pages-container-turn-off"
           }
@@ -67,7 +60,7 @@ const Navbar = () => {
               }`}
               onClick={() => setActiveBar("home")}
             >
-              <AiFillHome />
+              <AiFillHome onClick={() => setOpenBar(false)} />
             </div>
           </Link>
           <Link to={"/about"}>
@@ -77,7 +70,7 @@ const Navbar = () => {
               }`}
               onClick={() => setActiveBar("about")}
             >
-              <BsFillPersonFill />
+              <BsFillPersonFill onClick={() => setOpenBar(false)} />
             </div>
           </Link>
           <Link to={"/work"}>
@@ -87,7 +80,7 @@ const Navbar = () => {
               }`}
               onClick={() => setActiveBar("work")}
             >
-              <MdOutlineWork />
+              <MdOutlineWork onClick={() => setOpenBar(false)} />
             </div>
           </Link>
           <Link to={"/contact"}>
@@ -97,7 +90,7 @@ const Navbar = () => {
               }`}
               onClick={() => setActiveBar("contact")}
             >
-              <FaPhoneSquareAlt />
+              <FaPhoneSquareAlt onClick={() => setOpenBar(false)} />
             </div>
           </Link>
         </div>

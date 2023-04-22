@@ -1,5 +1,5 @@
 import React from "react";
-import "./contact.css";
+import "../Home/home.css";
 const Contact = () => {
   return (
     <div className="contact-us-page-container">
@@ -9,11 +9,10 @@ const Contact = () => {
           alt=""
           className="tempo-abel-pic"
         />
-
       </div>
       <div className="all-input-contact-container">
         <h1 className="get-in-touch">Get In Touch</h1>
-        <p className="interested-para">IF you interested give a call</p>
+        <p className="interested-para">Want to have a conversation? <br/> contact me here </p>
         <form className="form-control">
           <div className="contact-name-user">
             <input type="text" placeholder="First Name" />
@@ -29,8 +28,7 @@ const Contact = () => {
             <textarea type="text" placeholder="Write your comment here" />
           </div>
           <div className="send-btn-container">
-
-          <button className="send-contact-comments">Send</button>
+            <button className="send-contact-comments">Send</button>
           </div>
         </form>
       </div>

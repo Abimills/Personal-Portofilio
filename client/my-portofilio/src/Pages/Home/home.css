@@ -9,7 +9,7 @@
 .all-pages-home-container{
 
 width:100%;
-margin-top: 8rem;
+/* margin-top: 4rem; */
 /* min-height:100vh; */
 /* min-height: 100vh; */
 /* will change this later */
@@ -347,7 +347,6 @@ border-radius: 50%;
 }
 .mother-projects-container{
       width: 100%;
-      background-color: red;
 }
 .latest-projects{
       color: aqua;
@@ -370,21 +369,23 @@ border-radius: 50%;
 .filter-div{
       color:white;
       width: 100%;
-      display: grid;
-      grid-template-columns: repeat(4,200px);
-     
-      gap:4rem;
-      margin: 3rem;;
+       display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap:1rem;
+      margin:  3rem 0.5rem;;
       
 }
 
 .passive-cat{
-      width: 50%;
+      width: max-content;
       transition: 0.5s ease-in-out;
       text-transform: uppercase;
       padding: 10px 25px;
 border-radius: 40px;  
     cursor: pointer;
+    text-align: center;
       background-color: transparent;
       color:aqua;
       border:1.2px solid aquamarine;
@@ -614,6 +615,16 @@ animation: float 3s ease-in-out infinite;
       margin : 2rem;
       
 }
+.filter-div{
+      
+
+     
+      gap:4rem;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      
+}
 .circle-contact-about-me{
      width: 100%;
       margin : 2rem;
@@ -699,6 +710,26 @@ animation: float 3s ease-in-out infinite;
       .send-contact-comments{
             margin-left: -20%;;
       }
+      .my-logo-with-pic-contact-container{
+            display: none;
+      }
+      .all-input-contact-container{
+            width: 100%;
+            padding: 20px;
+      }
+      .contact-name-user  {
+            flex-direction: column;
+             width: 95.5%;
+      padding: 15px;
+       
+      
+      }
+      .contact-name-user input {
+            width: 100%;
+      }
+      .form-control *{
+            font-size: 0.8rem;
+      }
 
 
 }
@@ -713,6 +744,27 @@ animation: float 3s ease-in-out infinite;
       .marble-pic{
             width: 100%;
       }
+      .mother-projects-container{
+      margin-top: 7rem;
+}
+.project-name{
+      font-size: 1rem;
+      text-align: center;
+      /* color:orange; */
+}
+.demo-link{
+      width: 40px;
+      height: 40px;
+}
+.get-in-touch{
+      text-align: center;
+}
+.interested-para{
+      text-align: center;
+}
+.contact-us-page-container{
+margin-top: 6rem;
+}
 }
 @media screen and (max-width:480px){
 .my-pic{
