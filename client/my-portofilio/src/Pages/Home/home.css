@@ -279,12 +279,15 @@ margin-bottom: 8rem;
       justify-content: center;
       transition: 0.5s ease-in-out;
       border-radius: 62% 38% 70% 30% / 39% 37% 63% 61% ;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 600;
+
 }
 .individual-project:hover{
      border-radius: 50%;; 
 }
 .individual-project img {
-      width: 60%;
+      width: 80%;
       height: 60%;
       object-fit: cover;
       border-radius: 62% 38% 70% 30% / 39% 37% 63% 61% ;
@@ -295,12 +298,15 @@ margin-bottom: 8rem;
  .individual-project:hover img {
       border-radius: 54% 46% 28% 72% / 51% 42% 58% 49% ;
 }
+
+
 .project-name{
       color:black;
       margin-bottom: -1rem;
       /* margin-top: -1rem; */
       padding: 10px;
       padding: 10px;
+      font-weight: 400;
       text-transform: uppercase;
 }
 .demo-github-container{
@@ -388,14 +394,19 @@ border-radius: 40px;
     text-align: center;
       background-color: transparent;
       color:aqua;
-      border:1.2px solid aquamarine;
+      border:1.2px solid rgb(6, 65, 45);
+}
+.passive-cat:hover{
+      border:1.2px solid aqua;
+
+
 }
 
 .active-cat{
       transition: 0.5s ease-in-out;
 background-color: aquamarine;
   text-transform: uppercase;
-  border:1px solid aquamarine;
+  border:1px solid rgb(2, 30, 20);
          animation: float 3s ease-in-out infinite;
 
       padding: 15px 25px;
@@ -564,14 +575,7 @@ animation: float 3s ease-in-out infinite;
 }
 
 
-@keyframes typing {
-  from {
-    width: 0; /* start with zero width */
-  }
-  to {
-    width: 104%; /* gradually increase width to 100% */
-  }
-}
+
 @keyframes cursor {
   from, to {
         background-color: transparent;

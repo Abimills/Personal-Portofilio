@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { AiFillHome } from "react-icons/ai";
 import { BsFillPersonFill } from "react-icons/bs";
 import { MdOutlineWork } from "react-icons/md";
-import { FaPhoneSquareAlt } from "react-icons/fa";
+import { GiRotaryPhone } from "react-icons/gi";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseCircle } from "react-icons/io5";
 
@@ -90,7 +90,7 @@ const Navbar = () => {
               }`}
               onClick={() => setActiveBar("contact")}
             >
-              <FaPhoneSquareAlt onClick={() => setOpenBar(false)} />
+              <GiRotaryPhone onClick={() => setOpenBar(false)} />
             </div>
           </Link>
         </div>

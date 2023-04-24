@@ -8,7 +8,7 @@
       align-items: center;
       margin-top: 1rem;
       gap:1rem;
-      border-top: 3px solid aqua;
+      border-top: 3px solid rgb(6, 93, 93);
 }
 .footer-container h1{
       text-transform: lowercase;
@@ -22,9 +22,21 @@
       padding: 10px;
 }
 .pages-container h3{
-      font-family: 'Lobster', cursive;   
+      font-family: 'Raleway', sans-serif;
+      
+      cursor: pointer;
+      transition: 0.7s ease-in-out;
+      border: 1px solid transparent;
+      padding: 1px 15px;
+      width: max-content;
+}
+.pages-container h3:hover{
+      border: 1px solid aqua;
+      border-radius: 20px;
+      text-align: center;
+      transition: 0.7s ease-in-out;
+      transition: 0.7s ease-in-out;
 
-cursor: pointer;
 }
 .social-media-icons{
       display: flex;
@@ -33,7 +45,7 @@ cursor: pointer;
       /* margin-left: 4rem; */
 }
 .social-media-icons *{
-      color:aqua;
+      color:rgb(21, 132, 132);
       padding: 5px;
       font-size: 1.1rem;
 }
@@ -87,10 +99,14 @@ border-radius: 50%;
       display: flex;
       align-items: center;
       flex-direction: column;
-      border: 1px solid aquamarine;
+      border: 1px solid rgb(6, 79, 55);
       margin: 2rem;
       padding: 10px;
 border-radius: 67% 33% 35% 65% / 36% 19% 81% 64% ;
+}
+.circle-text-container *{
+color:white;
+font-weight: 100;
 }
  .copy-right-icons-container{
             width: 40%;

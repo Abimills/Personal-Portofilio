@@ -23,72 +23,65 @@ const projectsData = [
     name: "Vacation",
     imageSrc: vacation1,
     category: "frontend",
-    demoLink: "https://example.com/demo",
-    githubLink: "https://github.com/example/project4",
+    demoLink: "https://tourismab.netlify.app",
+    githubLink: "https://github.com/Abimills/tourism",
   },
   {
     name: "Restaurant",
     imageSrc: resourant2,
     category: "frontend",
-    demoLink: "https://example.com/demo",
-    githubLink: "https://github.com/example/project4",
+    demoLink: "https://restaurantab.netlify.app",
+    githubLink: "https://github.com/Abimills/restaurant/tree/main/restaurant",
   },
   {
     name: "Facewhere",
     imageSrc: facebook1,
     category: "fullstack",
-    demoLink: "https://example.com/demo",
-    githubLink: "https://github.com/example/project3",
+    demoLink: "https://socialb-hyf-final-project.netlify.app/",
+    githubLink:
+      "https://github.com/Abimills/React-Project-Socialb/tree/main/socialmedia",
   },
-  {
-    name: "Quiz App",
-    imageSrc: quiz1,
-    category: "game",
-    demoLink: "https://example.com/demo",
-    githubLink: "https://github.com/example/ecommerce",
-  },
+
   {
     name: "Ab Restaurant",
     imageSrc: abres2,
     category: "vanilla",
-    demoLink: "https://example.com/demo",
-    githubLink: "https://github.com/example/ecommerce",
+    demoLink: "https://abimills.github.io/api/public/",
+    githubLink:
+      "https://github.com/Abimills/Abel-API-Week-3-Individual-Project",
   },
   {
     name: "Ecommerce",
     imageSrc: ecommerce1,
     category: "frontend",
-    demoLink: "https://example.com/demo",
-    githubLink: "https://github.com/example/ecommerce",
+    demoLink: "https://abel-hyf-week3-homework-deployed.netlify.app",
+    githubLink:
+      "https://github.com/Abimills/React-class40/tree/abel-react-week3-homework/week3/project/ecommerce",
   },
   {
     name: "Travel Together",
     imageSrc: trip3,
     category: "fullstack",
-    demoLink: "https://example.com/demo",
-    githubLink: "https://github.com/example/project2",
-  },
-  {
-    name: "Food Menu",
-    imageSrc: food2,
-    category: "frontend",
-    demoLink: "https://example.com/demo",
-    githubLink: "https://github.com/example/project2",
+    demoLink: "https://c40-team-monday.herokuapp.com/",
+    githubLink:
+      "https://github.com/Abimills/HackYourFuture-Final-Group-Fullstack-Project",
   },
   {
     name: "Clothes Ecommerce",
     imageSrc: clothes,
     category: "frontend",
-    demoLink: "https://example.com/demo",
-    githubLink: "https://github.com/example/project2",
+    demoLink: "https://e-commereceapp.netlify.app",
+    githubLink: "https://github.com/Abimills/cloth-ecommerce",
   },
   {
-    name: "Cocktail",
-    imageSrc: cocktail,
-    category: "frontend",
-    demoLink: "https://example.com/demo",
-    githubLink: "https://github.com/example/project2",
+    name: "Quiz App",
+    imageSrc: quiz1,
+    category: "game",
+    demoLink: "https://abimills.github.io/quiz/",
+    githubLink: "https://github.com/Maher-Reven/browser-quiz-project-starter",
   },
+
+  
 ];
 
 const Projects = () => {
@@ -146,10 +139,15 @@ const Projects = () => {
                   <img src={imageSrc} alt={name} />
                   <h3 className="project-name">{name}</h3>
                   <div className="demo-github-container">
-                    <a href={demoLink} className="demo-link">
+                    <a
+                      href={demoLink}
+                      className="demo-link"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       demo
                     </a>
-                    <a href={githubLink}>
+                    <a href={githubLink} target="_blank" rel="noreferrer">
                       <AiFillGithub className="github-project" />
                     </a>
                   </div>
