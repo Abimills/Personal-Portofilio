@@ -131,10 +131,10 @@ font-weight: 600;
 }
 .hero-my-pic{
       
-      width:650px;
-      height: 400px;
-      object-fit: cover;
-      margin-left: -13rem;
+      width:500px;
+      height: 300px;
+      object-fit: contain;
+      /* margin-left: -13rem; */
       /* background-color: red; */
       /* margin-top: -10.6rem; */
       
@@ -229,7 +229,7 @@ color:white;
       object-fit: cover;
       margin: 0 2rem;
        border-radius: 67% 33% 35% 65% / 36% 19% 81% 64% ;
-
+        /* border-radius: 50%; */
 }
 .marble-pic{
       width: 300px;

@@ -1,6 +1,6 @@
 import React from "react";
 import "../../Pages/Home/home.css";
-import myPic from "./guy-looking-down.png";
+import homeAbel from "./new-abel.png";
 const HomeLandingPage = () => {
   return (
     <div className="main-home-page-container">
@@ -23,7 +23,7 @@ const HomeLandingPage = () => {
       </div>
 
       <div className="my-pic">
-        <img className="hero-my-pic" src={myPic} alt="" />
+        <img className="hero-my-pic" src={homeAbel} alt="" />
         <div className="full-name">
           <p>Abel</p>
           <p className="last-name">
