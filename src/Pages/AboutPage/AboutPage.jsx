@@ -3,7 +3,7 @@ import "../../Pages/Home/home.css";
 import { useEffect } from "react";
 import { useState } from "react";
 import abel from "./abel.png";
-import aboutMe from "./about-me.jpg";
+// import aboutMe from "./about-me.jpg";
 const AboutPage = () => {
   const [text, setText] = useState("");
   const aboutMeText = `Ab a junior fullstack web developer, I've had a thrilling
