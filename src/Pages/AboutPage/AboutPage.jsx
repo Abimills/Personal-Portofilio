@@ -3,10 +3,10 @@ import "../../Pages/Home/home.css";
 import { useEffect } from "react";
 import { useState } from "react";
 import abel from "./abel.png";
-// import aboutMe from "./about-me.jpg";
+import aboutMe from "../../Components/HomeLandingPage/home-abel.png";
 const AboutPage = () => {
   const [text, setText] = useState("");
-  const aboutMeText = `Ab a junior fullstack web developer, I've had a thrilling
+  const aboutMeText = `Ass a junior fullstack web developer, I've had a thrilling
     experience working with code. From my early days learning HTML and
     CSS, to diving deeper into JavaScript and other programming
     languages, coding has become a passion of mine. I've worked on a

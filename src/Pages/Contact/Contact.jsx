@@ -1,18 +1,17 @@
 import React from "react";
 import "../Home/home.css";
+import standing from "./standing.png";
 const Contact = () => {
   return (
     <div className="contact-us-page-container">
       <div className="my-logo-with-pic-contact-container">
-        <img
-          src="https://media.istockphoto.com/id/1082313882/photo/beautiful-black-man.jpg?s=612x612&w=0&k=20&c=AZOgXuAMV-oanDiwxI2SofG_E5BUcOssxFFDRS2meRA="
-          alt=""
-          className="tempo-abel-pic"
-        />
+        <img src={standing} alt="" className="tempo-abel-pic" />
       </div>
       <div className="all-input-contact-container">
         <h1 className="get-in-touch">Get In Touch</h1>
-        <p className="interested-para">Want to have a conversation? <br/> contact me here </p>
+        <p className="interested-para">
+          Want to have a conversation? <br /> contact me here{" "}
+        </p>
         <form className="form-control">
           <div className="contact-name-user">
             <input type="text" placeholder="First Name" />
