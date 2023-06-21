@@ -11,6 +11,7 @@ import food2 from "./food2.png";
 import resourant2 from "./resourant2.png";
 import vacation1 from "./vacation1.png";
 import clothes from "./clothes.png";
+import payment from "./payment.png";
 import cocktail from "./cocktail.png";
 import quiz1 from "./quiz1.png";
 import quiz2 from "./quiz2.png";
@@ -36,7 +37,7 @@ const projectsData = [
   {
     name: "Facewhere",
     imageSrc: facebook1,
-    category: "fullstack",
+    category: "frontend",
     demoLink: "https://socialb-hyf-final-project.netlify.app/",
     githubLink:
       "https://github.com/Abimills/React-Project-Socialb/tree/main/socialmedia",
@@ -67,6 +68,13 @@ const projectsData = [
       "https://github.com/Abimills/HackYourFuture-Final-Group-Fullstack-Project",
   },
   {
+    name: "Payment Tracker",
+    imageSrc: payment,
+    category: "fullstack",
+    demoLink: "https://abimills.vercel.app/",
+    githubLink: "https://github.com/Abimills/payment-tracker",
+  },
+  {
     name: "Clothes Ecommerce",
     imageSrc: clothes,
     category: "frontend",
@@ -80,8 +88,6 @@ const projectsData = [
     demoLink: "https://abimills.github.io/quiz/",
     githubLink: "https://github.com/Maher-Reven/browser-quiz-project-starter",
   },
-
-  
 ];
 
 const Projects = () => {
@@ -94,7 +100,7 @@ const Projects = () => {
   return (
     <>
       <div className="mother-projects-container">
-        <p className="latest-projects">{" < My latest Projects />"}</p>
+        <h1 className="latest-projects">{" < My latest Projects />"}</h1>
         <div className="filter-div">
           <h3
             onClick={() => handleClick("game")}
@@ -156,7 +162,7 @@ const Projects = () => {
             })}
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

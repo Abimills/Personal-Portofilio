@@ -14,7 +14,7 @@ const HomeLandingPage = () => {
         </h1>
         <p className="enjoy-work">
           {
-            "< Enjoy what you do and you will never work for the rest of your life. />"
+            "< Enjoy what you do and you will never work a day in your life. />"
           }
         </p>
         <div className="contact-me-div-btn">

@@ -41,7 +41,7 @@ const AboutPage = () => {
         </div>
         <div className="about-me-pic-container">
           <div className="circle-contact-about-me">
-            <p className="contact-me-circle">contact me</p>
+            <button className="contact-me-circle">contact me</button>
             <div className="about-image-container">
               <img src={abel} alt="" className="me-pic-about" />
             </div>

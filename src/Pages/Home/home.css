@@ -1,841 +1,901 @@
-@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,600;0,900;1,100;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,600;0,900;1,100;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
 
-
-.all-pages-home-container{
-
-width:100%;
-/* margin-top: 4rem; */
-/* min-height:100vh; */
-/* min-height: 100vh; */
-/* will change this later */
-/* background-image: linear-gradient(to bottom, rgba(1, 3, 13, 0.52), rgba(0, 0, 0, 0.73)) ,url("https://cutewallpaper.org/21/mac-black-wallpaper/Black-Wallpapers-and-Pictures-Graphics-download-for-free.jpg");
+.all-pages-home-container {
+  width: 100%;
+  /* margin-top: 4rem; */
+  /* min-height:100vh; */
+  /* min-height: 100vh; */
+  /* will change this later */
+  /* background-image: linear-gradient(to bottom, rgba(1, 3, 13, 0.52), rgba(0, 0, 0, 0.73)) ,url("https://cutewallpaper.org/21/mac-black-wallpaper/Black-Wallpapers-and-Pictures-Graphics-download-for-free.jpg");
 background-size: contain; */
-height: 460px;
-/* overflow-y: hidden; */
+  height: 460px;
+  /* overflow-y: hidden; */
 }
 
-.introduction-title{
-width: 50%;
-height:100%;
-display: flex;
-flex-direction: column;
+.introduction-title {
+  width: 50%;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+}
+.my-name {
+  color: black;
+  margin-top: 6%;
+  margin-left: 20%;
+  font-size: 8rem;
+  text-transform: uppercase;
+  /* font-family:  cursive; */
+  color: aqua;
+  font-family: "Raleway", sans-serif;
+  /* font-weight: 100;    */
+}
+.my-name span {
+  font-family: "Raleway", sans-serif;
+  /* font-family:  cursive; */
+  font-weight: 100;
+  font-size: 3rem;
 
-
-}
-.my-name{
-      color:white;
-      margin-top: 6%;
-      margin-left: 20%;;
-      font-size: 8rem;
-      text-transform: uppercase;
-      /* font-family:  cursive; */
-      color:aqua;
-      font-family: 'Raleway', sans-serif;
-      /* font-weight: 100;    */
-}
-.my-name span{
-      font-family: 'Raleway', sans-serif;
-      /* font-family:  cursive; */
-      font-weight: 100;   
-      font-size: 3rem;
-      
-      margin-left: -2rem;
-      color:white;
-      
+  margin-left: -2rem;
+  color: black;
 }
 
-
-
-.my-job{
-      color:white;
-      /* font-weight: 100;    */
-      margin-left: 20%;;
-      text-transform: uppercase;
-      margin-top:-7rem;
-      margin-bottom: 4rem;
+.my-job {
+  color: black;
+  /* font-weight: 100;    */
+  margin-left: 20%;
+  text-transform: uppercase;
+  margin-top: -7rem;
+  margin-bottom: 4rem;
 }
-.developer{
-      color:aqua;
+.developer {
+  color: aqua;
 }
-.enjoy-work{
-      color:rgb(12, 102, 102);
-      margin: 0 auto;;
-      margin-top: -3rem;
-      margin-bottom: 3rem;
-      font-family: 'Lobster', cursive;
-      font-weight: 100;   
+.enjoy-work {
+  color: rgb(12, 102, 102);
+  margin: 0 auto;
+  margin-top: -3rem;
+  margin-bottom: 3rem;
+  font-family: "Lobster", cursive;
+  font-weight: 100;
 }
-.my-pic{
-      width:330px;
-      height: 430px;
-      box-shadow: inset 20px 20px 20px 20px rgba(244, 41, 41, 0.05),25px 35px 20px rgba(249, 128, 128, 0.05),
-      25px 30px 30px rgba(252, 150, 150, 0.05),
-      inset -20px -20px 25px rgba(3, 84, 92, 0.9);
-      transition: 0.5s;
-      display: flex;
-      border:1px solid aquamarine;
-      align-items: center;
-      border-radius: 67% 33% 35% 65% / 36% 19% 81% 64% ;
-      background-color: aquamarine;
-      flex-wrap: wrap;
-       animation: float 3s ease-in-out infinite;
-
+.my-pic {
+  width: 330px;
+  height: 430px;
+  box-shadow: inset 20px 20px 20px 20px rgba(244, 41, 41, 0.05),
+    25px 35px 20px rgba(249, 128, 128, 0.05),
+    25px 30px 30px rgba(252, 150, 150, 0.05),
+    inset -20px -20px 25px rgba(145, 147, 147, 0.9);
+  transition: 0.5s;
+  display: flex;
+  border: 1px solid white;
+  align-items: center;
+  /* border-radius: 67% 33% 35% 65% / 36% 19% 81% 64%; */
+  background-color: whitesmoke;
+  flex-wrap: wrap;
+  animation: float 3s ease-in-out infinite;
 }
-.contact-me-home-btn{
-      width: 70px;
-      height: 70px;
-      padding: 5px;
-      border-radius:100% 0% 35% 65% / 36% 55% 45% 64%  ;
-      background-color: orange;
-      margin-left: -2rem;
-      transition: 0.5s;
-      box-shadow: inset 20px 20px 20px 20px rgba(244, 41, 41, 0.05),25px 35px 20px rgba(249, 128, 128, 0.05),
-      25px 30px 30px rgba(252, 150, 150, 0.05),
-      inset -20px -20px 25px rgba(42, 237, 255, 0.9);
-      border:none;
-       font-family: 'Raleway', sans-serif;
-font-weight: 600;
+.contact-me-home-btn {
+  width: 70px;
+  height: 70px;
+  padding: 5px;
+  border-radius: 100% 0% 35% 65% / 36% 55% 45% 64%;
+  background-color: orange;
+  margin-left: -2rem;
+  transition: 0.5s;
+  box-shadow: inset 20px 20px 20px 20px rgba(244, 41, 41, 0.05),
+    25px 35px 20px rgba(249, 128, 128, 0.05),
+    25px 30px 30px rgba(252, 150, 150, 0.05),
+    inset -20px -20px 25px rgba(42, 237, 255, 0.9);
+  border: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
 }
-.contact-me-home-btn:hover{
-      border-radius: 14% 86% 35% 65% / 59% 74% 26% 41% ;
-      
+.contact-me-home-btn:hover {
+  border-radius: 14% 86% 35% 65% / 59% 74% 26% 41%;
 }
 @keyframes float {
-      0% {
-            transform: translateY(0);
-            border-radius: 14% 86% 35% 65% / 59% 74% 26% 41% ;
-      }
-      50% {
-            transform: translateY(-10px);
-            border-radius:100% 0% 35% 65% / 36% 55% 45% 64%  ;
-      }
-      100% {
-        border-radius: 14% 86% 35% 65% / 59% 74% 26% 41% ;
+  0% {
     transform: translateY(0);
+    border-radius: 14% 86% 35% 65% / 59% 74% 26% 41%;
+    border-radius: 30%;
+  }
+  50% {
+    transform: translateY(-10px);
+    border-radius: 100% 0% 35% 65% / 36% 55% 45% 64%;
+    border-radius: 50%;
+  }
+  100% {
+    border-radius: 14% 86% 35% 65% / 59% 74% 26% 41%;
+    transform: translateY(0);
+    border-radius: 30%;
+  }
+}
+@keyframes float1 {
+  0% {
+    transform: translateY(0);
+    border-radius: 14% 86% 35% 65% / 59% 74% 26% 41%;
+    
+  }
+  50% {
+    transform: translateY(-10px);
+    border-radius: 100% 0% 35% 65% / 36% 55% 45% 64%;
+  
+  }
+  100% {
+    border-radius: 14% 86% 35% 65% / 59% 74% 26% 41%;
+    transform: translateY(0);
+    
   }
 }
 
-.contact-me-div-btn{
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+.contact-me-div-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.my-pic:hover{
-      border-radius: 50%;;
+.my-pic:hover {
+  border-radius: 50%;
+  background-color: white;
 }
-.hero-my-pic{
-      
-      width:500px;
-      height: 300px;
-      object-fit: contain;
-      /* margin-left: -13rem; */
-      /* background-color: red; */
-      /* margin-top: -10.6rem; */
-      
-
+.hero-my-pic {
+  width: 500px;
+  height: 300px;
+  object-fit: contain;
+  /* margin-left: -13rem; */
+  /* background-color: red; */
+  /* margin-top: -10.6rem; */
 }
 
-.main-home-page-container{
-      width: 100%;
-      
-      display: flex;
-      align-items: center;
-      /* flex-direction: row-reverse; */
-      margin-top: 3rem;
-      /* background-color: red; */
-     margin-bottom: 12rem;
-     gap:6rem
-}
-.full-name{
- /* position: relative; */
-/* top:100px; */
- color:white;
- font-size:1rem;
- /* font-family: 'DynaPuff', cursive; */
- 
-   font-family: 'Raleway', sans-serif;
-     font-weight: 700;
-     margin-left: 8rem;
-     margin-top: -7rem;
-}
-.last-name{
-/* position: relative; */
-/* top:100px; */
-margin-top: -1rem;
- color:white;
- font-size:2rem;
- font-weight: 100;
-}
-.part-last-name{
-      color:yellowgreen;
- font-family: 'DynaPuff', cursive;
-}
-.circle-orange{
-      width:30px;
-      height: 1px;
-      background-color: orange;;
-      position: relative;
-      /* left:-100px; */
-      border-radius: 50%;
-      
-      /* margin-top: -2rem; */
-      margin-top: -2rem;
-      margin-left: 0.4rem;
+.main-home-page-container {
+  width: 100%;
 
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  /* flex-direction: row-reverse; */
+  margin-top: 3rem;
+  /* background-color: red; */
+  /* margin-bottom: 12rem; */
+  gap: 6rem;
+}
+.full-name {
+  /* position: relative; */
+  /* top:100px; */
+  color: white;
+  font-size: 1rem;
+  /* font-family: 'DynaPuff', cursive; */
+
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  margin-left: 8rem;
+  margin-top: -7rem;
+}
+.last-name {
+  /* position: relative; */
+  /* top:100px; */
+  margin-top: -1rem;
+  color: white;
+  font-size: 2rem;
+  font-weight: 100;
+}
+.part-last-name {
+  color: yellowgreen;
+  font-family: "DynaPuff", cursive;
+}
+.circle-orange {
+  width: 30px;
+  height: 1px;
+  background-color: orange;
+  position: relative;
+  /* left:-100px; */
+  border-radius: 50%;
+
+  /* margin-top: -2rem; */
+  margin-top: -2rem;
+  margin-left: 0.4rem;
 }
 
 /* ============= end of home landing page */
 /* home about section ======= */
-.mini-about-section{
-width: 100%;
-color:white;
+.mini-about-section {
+  width: 100%;
+  color: white;
 }
-.about-me-pic-container{
-      display: flex;
-      align-items: center;
-      gap: 1rem;
+.about-me-pic-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
-.contact-me-circle{
-      margin: 0 10px;
-      width:100px;
-      height:100px;
-      padding: 5px;
-      border-radius:100% 0% 35% 65% / 36% 55% 45% 64%  ;
-      background-color: orange;
-      /* margin-left: -2rem; */
-      transition: 0.5s;
-      box-shadow: inset 20px 20px 20px 20px rgba(244, 41, 41, 0.05),25px 35px 20px rgba(249, 128, 128, 0.05),
-      25px 30px 30px rgba(252, 150, 150, 0.05),
-      inset -20px -20px 25px rgba(42, 237, 255, 0.9);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color:black;
-      font-family: 'Raleway', sans-serif;
-      font-weight: 700;
+.contact-me-circle {
+  margin: 0 10px;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+ 
+border: 1px solid aquamarine;
+  border-radius: 100% 0% 35% 65% / 36% 55% 45% 64%;
+  background-color: white;
+  /* margin-left: -2rem; */
+  transition: 0.5s;
+  box-shadow: inset 20px 20px 20px 20px rgba(244, 41, 41, 0.05),
+    25px 35px 20px rgba(249, 128, 128, 0.05),
+    25px 30px 30px rgba(252, 150, 150, 0.05),
+    inset -20px -20px 25px rgba(28, 239, 196, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(104, 69, 5);
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  text-transform: capitalize;
+  cursor: pointer;
 }
-.contact-me-circle:hover{
-       border-radius: 14% 86% 35% 65% / 59% 74% 26% 41% ;
+.contact-me-circle:hover {
+  border-radius: 14% 86% 35% 65% / 59% 74% 26% 41%;
 }
-.me-pic-about{
-      width: 300px;
-      height: 300px;
-      object-fit: cover;
-      margin: 0 2rem;
-       border-radius: 67% 33% 35% 65% / 36% 19% 81% 64% ;
-        /* border-radius: 50%; */
+.about-image-container{
+  width: 300px;
+  height: 300px;
+  /* background-color: aquamarine; */
 }
-.marble-pic{
-      width: 300px;
-      height: 30px;
-      border-radius: 20px;
-      object-fit: cover;
-      margin: 0 0 2rem 0;
-       box-shadow: inset 20px 20px 20px 20px rgba(11, 220, 213, 0.05),25px 35px 20px rgba(0, 229, 255, 0.05),
-      25px 30px 30px rgba(2, 223, 248, 0.05),
-      inset -20px -20px 25px rgba(13, 207, 225, 0.9);
+.me-pic-about {
+  width: 60%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0 2rem;
+ border-radius: 10px;
+  /* border-radius: 67% 33% 35% 65% / 36% 19% 81% 64%; */
+  /* border-radius: 50%; */
+}
+.marble-pic {
+  width: 300px;
+  height: 30px;
+  border-radius: 20px;
+  object-fit: cover;
+  margin: 0 0 2rem 0;
+  box-shadow: inset 20px 20px 20px 20px rgba(11, 220, 213, 0.05),
+    25px 35px 20px rgba(0, 229, 255, 0.05),
+    25px 30px 30px rgba(2, 223, 248, 0.05),
+    inset -20px -20px 25px rgba(13, 207, 225, 0.9);
+}
+.my-about-para {
+  max-width: 600px;
+  font-family: "Lobster", cursive;
+    font-family: "Raleway", sans-serif;
 
-}
-.my-about-para{
-      max-width: 600px;
-      font-family: 'Lobster', cursive;   
-      font-weight: 400;
-font-size: 1.2rem;
-      line-height: 25px;
-      color:rgb(135, 192, 173);
-      /* background-image: url("https://t4.ftcdn.net/jpg/05/69/86/47/360_F_569864714_pJaPQL9bBdAqFYZmSVMpfr7o2vQx8cMa.jpg");
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 25px;
+  color: rgb(135, 192, 173);
+  /* background-image: url("https://t4.ftcdn.net/jpg/05/69/86/47/360_F_569864714_pJaPQL9bBdAqFYZmSVMpfr7o2vQx8cMa.jpg");
       background-size: cover; */
-      border-radius: 20px;
-      min-height: 300px;
+  border-radius: 20px;
+  min-height: 300px;
 }
 
-.projects-container{
-display: flex;
-gap : 5rem;
-align-items: center;
-justify-content: center;
-flex-wrap: wrap;
-padding: 20px;
-margin-bottom: 8rem;
+.projects-container {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin-bottom: 8rem;
 }
-.individual-project{
-      width:400px;
-      height: 400px;
-      background-color: rgb(199, 247, 247);;
-      margin: 1rem 0 2rem;
-      box-shadow: inset 20px 20px 20px rgba(76, 3, 3, 0.05),
-      25px 35px 20px rgba(11, 31, 245, 0.05),
-      25px 30px 30px rgba(8, 207, 247, 0.05),
-      inset -20px -20px 25px rgba(4, 44, 52, 0.9) ;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      transition: 0.5s ease-in-out;
-      border-radius: 62% 38% 70% 30% / 39% 37% 63% 61% ;
-      font-family: 'Raleway', sans-serif;
-      font-weight: 600;
-
+.individual-project {
+  width: 400px;
+  height: 400px;
+  background-color: rgb(199, 247, 247);
+  margin: 1rem 0 2rem;
+  box-shadow: inset 20px 20px 20px rgba(76, 3, 3, 0.05),
+    25px 35px 20px rgba(11, 31, 245, 0.05),
+    25px 30px 30px rgba(8, 207, 247, 0.05),
+    inset -20px -20px 25px rgba(4, 44, 52, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease-in-out;
+  /* border-radius: 62% 38% 70% 30% / 39% 37% 63% 61%; */
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  border-radius: 100px;
 }
-.individual-project:hover{
-     border-radius: 50%;; 
+.individual-project:hover {
+  border-radius: 50%;
 }
 .individual-project img {
-      width: 80%;
-      height: 60%;
-      object-fit: cover;
-      border-radius: 62% 38% 70% 30% / 39% 37% 63% 61% ;
-      /* margin: 20px 20px; */
-      transition: 0.5s ease-in-out;
-
+  width: 80%;
+  height: 60%;
+  object-fit: cover;
+  border-radius: 62% 38% 70% 30% / 39% 37% 63% 61%;
+  /* margin: 20px 20px; */
+  transition: 0.5s ease-in-out;
 }
- .individual-project:hover img {
-      border-radius: 54% 46% 28% 72% / 51% 42% 58% 49% ;
-}
-
-
-.project-name{
-      color:black;
-      margin-bottom: -1rem;
-      /* margin-top: -1rem; */
-      padding: 10px;
-      padding: 10px;
-      font-weight: 400;
-      text-transform: uppercase;
-}
-.demo-github-container{
-      display: flex;
-      padding: 10px;
-      gap: 2rem;
-      transition: 0.5s ease-in-out;
-      text-transform: capitalize;
-      align-items: center;
-      color:white;
-      justify-content:space-between;
-margin: 0 1rem;
-}
-a{
-      text-decoration: none;
-      transition: 0.5s ease-in-out;
-      
-}
-.demo-link{
-      background-color: aqua;
-      color:white;
-      transition: 0.5s ease-in-out;
-      /* padding: 10px; */
-      width: 50px;
-      height: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius:62% 38% 70% 30% / 39% 37% 63% 61%  ;
-}
-.github-project{
-      color: black;;
-      cursor: pointer;
-      transition: 0.5s ease-in-out;
- font-size: 2.1rem;
- background-color: aqua;
- border-radius:62% 38% 70% 30% / 39% 37% 63% 61%  ;
-}
-.github-project:hover{
-border-radius: 50%;
-}
-.demo-link:hover{
-border-radius: 50%;
-}
-.mother-projects-container{
-      width: 100%;
-}
-.latest-projects{
-      color: aqua;
-      text-align: center;
-      text-transform: uppercase;
-      font-family: 'Raleway', sans-serif;
-      font-weight: 100;
-
-}
-.underline-project{
-      display: none;
-      content:none;
-      width: 150px;
-      height:5px;
-      background-color: aquamarine;
-      margin: 0 auto;
-      margin-top: -0.5rem;
-      margin-bottom: 2rem;
-}
-.filter-div{
-      color:white;
-      width: 100%;
-       display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap:1rem;
-      margin:  3rem 0.5rem;;
-      
+.individual-project:hover img {
+  border-radius: 54% 46% 28% 72% / 51% 42% 58% 49%;
 }
 
-.passive-cat{
-      width: max-content;
-      transition: 0.5s ease-in-out;
-      text-transform: uppercase;
-      padding: 10px 25px;
-border-radius: 40px;  
-    cursor: pointer;
-    text-align: center;
-      background-color: transparent;
-      color:aqua;
-      border:1.2px solid rgb(6, 65, 45);
-}
-.passive-cat:hover{
-      border:1.2px solid aqua;
-
-
-}
-
-.active-cat{
-      transition: 0.5s ease-in-out;
-background-color: aquamarine;
+.project-name {
+  color: black;
+  margin-bottom: -1rem;
+  /* margin-top: -1rem; */
+  padding: 10px;
+  padding: 10px;
+  font-weight: 400;
   text-transform: uppercase;
-  border:1px solid rgb(2, 30, 20);
-         animation: float 3s ease-in-out infinite;
+}
+.demo-github-container {
+  display: flex;
+  padding: 10px;
+  gap: 2rem;
+  transition: 0.5s ease-in-out;
+  text-transform: capitalize;
+  align-items: center;
+  color: white;
+  justify-content: space-between;
+  margin: 0 1rem;
+}
+a {
+  text-decoration: none;
+  transition: 0.5s ease-in-out;
+}
+.demo-link {
+  background-color: aqua;
+  color: white;
+  transition: 0.5s ease-in-out;
+  /* padding: 10px; */
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 62% 38% 70% 30% / 39% 37% 63% 61%;
+}
+.github-project {
+  color: black;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  font-size: 2.1rem;
+  background-color: aqua;
+  border-radius: 62% 38% 70% 30% / 39% 37% 63% 61%;
+}
+.github-project:hover {
+  border-radius: 50%;
+}
+.demo-link:hover {
+  border-radius: 50%;
+}
+.mother-projects-container {
+  width: 100%;
+}
+.latest-projects {
+  color: aqua;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+}
+.underline-project {
+  display: none;
+  content: none;
+  width: 150px;
+  height: 5px;
+  background-color: aquamarine;
+  margin: 0 auto;
+  margin-top: -0.5rem;
+  margin-bottom: 2rem;
+}
+.filter-div {
+  color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 3rem 0.5rem;
+}
 
-      padding: 15px 25px;
-      border-radius: 28% 72% 69% 31% / 20% 42% 58% 80% ;
-      cursor: pointer;
-        box-shadow: inset 20px 20px 20px rgba(76, 3, 3, 0.05),
-      25px 35px 20px rgba(11, 31, 245, 0.05),
-      25px 30px 30px rgba(8, 207, 247, 0.05),
-      inset -20px -20px 25px rgba(4, 44, 52, 0.9) ;
+.passive-cat {
+  width: max-content;
+  transition: 0.5s ease-in-out;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  border-radius: 40px;
+  cursor: pointer;
+  text-align: center;
+  background-color: transparent;
+  color: aqua;
+  border: 1.2px solid aquamarine;
 }
-.contact-us-page-container{
-      width: 100%;
-      /* height: 400px; */
-      display: flex;
-      color:white;
-      align-items: center;
-      
+.passive-cat:hover {
+  border: 1.2px solid aqua;
 }
-.my-logo-with-pic-contact-container{
-width: 500px;
-height: 500px;
-margin-right: -8rem;
-}
-.tempo-abel-pic{
-      width:100%;
-      height: 100%;
-      object-fit: contain;
-}
-.logo-contact-page{
-      background-color: orange;;
-      width: 10px;
-      padding: 10px;
-      font-family: 'Raleway', sans-serif;
-}
-.contact-me-paragraph{
- max-width: 400px;
-font-family: 'Raleway', sans-serif;
-font-size: 0.8rem;
-margin-top: 8rem;
 
-}
-.get-in-touch{
-      text-transform: uppercase;
-      font-family: 'Raleway', sans-serif;
-      font-weight: 700;
-      letter-spacing: 6px;
-}
-.interested-para{
-      font-family: 'Raleway', sans-serif;
-      font-weight: 100;
-text-transform: uppercase;
-} .all-input-contact-container{
-      flex: 1;
-}
-.form-control{
-width: 90%;
-padding: 10px;
+.active-cat {
+  transition: 0.5s ease-in-out;
+  background-color: aquamarine;
+  text-transform: uppercase;
+  border: 1px solid white;
+  animation: float 3s ease-in-out infinite;
 
+  padding: 15px 25px;
+  border-radius: 28% 72% 69% 31% / 20% 42% 58% 80%;
+  cursor: pointer;
+  box-shadow: inset 20px 20px 20px rgba(76, 3, 3, 0.05),
+    25px 35px 20px rgba(11, 31, 245, 0.05),
+    25px 30px 30px rgba(8, 207, 247, 0.05),
+    inset -20px -20px 25px rgba(4, 44, 52, 0.9);
 }
-.contact-name-user{
-      width: 100%;
-      /* border: 1px solid orange; */
-      margin: 1rem 0 ;
-      display: flex;
-      align-items: center;
-      gap: 1rem
+.contact-us-page-container {
+  width: 100%;
+  /* height: 400px; */
+  display: flex;
+  color: white;
+  align-items: center;
+}
+.my-logo-with-pic-contact-container {
+  width: 500px;
+  height: 500px;
+  margin-right: -8rem;
+}
+.tempo-abel-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.logo-contact-page {
+  background-color: orange;
+  width: 10px;
+  padding: 10px;
+  font-family: "Raleway", sans-serif;
+}
+.contact-me-paragraph {
+  max-width: 400px;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8rem;
+  margin-top: 8rem;
+}
+.get-in-touch {
+  color:aquamarine;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  letter-spacing: 6px;
+}
+.interested-para {
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+  color:black;
+  background-color: white;;
+  padding: 10px;
+  text-transform: uppercase;
+}
+.all-input-contact-container {
+  flex: 1;
+}
+.form-control {
+  width: 90%;
+  padding: 10px;
+}
+.contact-name-user {
+  width: 100%;
+  /* border: 1px solid orange; */
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 .contact-name-user input {
-      width: 50%;
-      background-color: aquamarine;
-      border: 1px solid aquamarine;
-      padding: 15px;
-      outline: none;
-      color:white;
-
-
-}
-.contact-name-user input:hover{
-      background-color: transparent;
-}
-.email-container{
-      width: 95.5%;
-      
-}
-.email-container input{
-      width: 100%;
-      padding: 15px;
-      background-color: transparent;
-      border: 1px solid aquamarine;
-       color:white;
-      outline: none;
+  width: 50%;
+  background-color: aquamarine;
+  border: 1px solid aquamarine;
+  padding: 15px;
+  outline: none;
+  color: black;
 
 }
-
-.phone-container{
-      width: 95.5%;
-      
+.contact-name-user input:hover {
+  background-color: transparent;
 }
-.phone-container input{
-      width: 100%;
-      padding: 15px;
-      background-color: transparent;
-      border: 1px solid aquamarine;
-      margin-top: 1rem ;
-      color:white;
-      outline: none;
-
-      
+.email-container {
+  width: 95.5%;
 }
-.text-area-container{
-      width: 95.5%;
-      
-}
-.text-area-container textarea{
-      width: 100%;
-      padding: 15px;
-      background-color: transparent;
-      border: 1px solid aquamarine;
-      margin-top: 1rem ;
-       color:white;
-      outline: none;
-
-}
-.send-btn-container{
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-}
-.send-contact-comments{
-      width: 100px;
-      height: 100px;
-      padding: 10px;
-      background-color: aquamarine;
-      border: 1px solid aquamarine;
-      margin-top: 1rem;
-       box-shadow: inset 20px 20px 20px rgba(76, 3, 3, 0.05),
-      25px 35px 20px rgba(11, 31, 245, 0.05),
-      25px 30px 30px rgba(8, 207, 247, 0.05),
-      inset -20px -20px 25px rgba(4, 44, 52, 0.9) ;
-      border-radius: 62% 38% 70% 30% / 39% 37% 63% 61% ;
-transition: 0.5s ease;
-animation: float 3s ease-in-out infinite;
-/* margin-left:20rem; */
-}
-.send-contact-comments:hover{
-      border-radius: 23% 77% 66% 34% / 59% 53% 47% 41% ;
-}
-.name-about-me-container{
-      width: 100%;
-      display: flex;
-      justify-content: center;
-}
-.name-about-me-container div{
-      
-      display: inline-block;
-      white-space: nowrap; /* prevent line breaks */
-
+.email-container input {
+  width: 100%;
+  padding: 15px;
+  background-color: transparent;
+  border: 1px solid aquamarine;
+  color: white;
+  outline: none;
+   color: black;
+  background-color: white;
 }
 
-.my-about-name{
-   text-transform: uppercase;
+.phone-container {
+  width: 95.5%;
+}
+.phone-container input {
+  width: 100%;
+  padding: 15px;
+  background-color: transparent;
+  border: 1px solid aquamarine;
+  margin-top: 1rem;
+  color: black;
+  background-color: white;
+  outline: none;
+
+}
+.text-area-container {
+  width: 95.5%;
+}
+.text-area-container textarea {
+  width: 100%;
+  padding: 15px;
+  background-color: transparent;
+  border: 1px solid aquamarine;
+  margin-top: 1rem;
+ 
+  outline: none;
+  color: black;
+  background-color: white;
+}
+.send-btn-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.send-contact-comments {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  background-color: aquamarine;
+  border: 1px solid aquamarine;
+  margin-top: 1rem;
+  cursor: pointer;
+  box-shadow: inset 20px 20px 20px rgba(76, 3, 3, 0.05),
+    25px 35px 20px rgba(11, 31, 245, 0.05),
+    25px 30px 30px rgba(8, 207, 247, 0.05),
+    inset -20px -20px 25px rgba(4, 44, 52, 0.9);
+  border-radius: 62% 38% 70% 30% / 39% 37% 63% 61%;
+  transition: 0.5s ease;
+  animation: float1 3s ease-in-out infinite;
+  /* margin-left:20rem; */
+}
+.send-contact-comments:hover {
+  color: white;
+  background-color: aqua;
+  border-radius: 23% 77% 66% 34% / 59% 53% 47% 41%;
+}
+.name-about-me-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.name-about-me-container div {
+  display: inline-block;
+  white-space: nowrap; /* prevent line breaks */
+}
+
+.my-about-name {
+  text-transform: uppercase;
   text-align: center;
-
+  color:aquamarine;
 }
-
-
 
 @keyframes cursor {
-  from, to {
-        background-color: transparent;
-}
+  from,
+  to {
+    background-color: transparent;
+  }
 
-50% {
-      background-color: white;
-}
-100% {
-      background-color: transparent;
+  50% {
+    background-color: white;
+  }
+  100% {
+    background-color: transparent;
   }
 }
 /* aboutpage==== */
 
-.circle-contact-about-me{
-      width:40%;
-      display: flex;
-      align-items: center;
-      margin:1rem;
+.circle-contact-about-me {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  margin: 1rem;
 }
-.about-me-paragraph{
-      width: 60%;
-      margin:1rem;
-      
-
+.about-me-paragraph {
+  width: 60%;
+  margin: 1rem;
 }
 /* =========== */
 
-@media screen and (max-width:1000px){
-      .my-name{
- margin-top: 16%;
-      margin-left: 5%;;
-      font-size: 4rem;
-      }
-      .about-me-pic-container{
-            flex-direction: column-reverse;
-            margin: 2rem;;
-      }
-      .about-me-paragraph{
-      width: 100%;
-      margin : 2rem;
-      
-}
-.filter-div{
-      
+@media screen and (max-width: 1000px) {
+  .my-name {
+    margin-top: 16%;
+    margin-left: 5%;
+    font-size: 4rem;
+  }
+  .about-me-pic-container {
+    flex-direction: column-reverse;
+    margin: 2rem;
+  }
+  .about-me-paragraph {
+    width: 100%;
+    margin: 2rem;
+  }
+  .filter-div {
+    gap: 4rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .circle-contact-about-me {
+    width: 100%;
+    margin: 2rem;
+  }
+  .main-home-page-container {
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .my-job {
+    /* font-weight: 100;    */
+    margin-left: 5%;
+    text-transform: uppercase;
+    margin-top: -3rem;
+    margin-bottom: 4rem;
+  }
+  .my-name span {
+    font-family: "Raleway", sans-serif;
+    /* font-family:  cursive; */
+    font-weight: 100;
+    font-size: 3rem;
 
-     
-      gap:4rem;
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      
+    margin-left: -0.5rem;
+    color: black;
+  }
 }
-.circle-contact-about-me{
-     width: 100%;
-      margin : 2rem;
+@media screen and (max-width: 880px) {
+  .main-home-page-container {
+    /* flex-direction: column; */
+    /* flex-direction: row-reverse; */
+    margin-top: 3rem;
+    flex-direction: column-reverse;
 
-      }
-      .main-home-page-container{
-            gap:1rem;
-            flex-wrap: wrap;
-      }
-      .my-job{
-      
-      /* font-weight: 100;    */
-      margin-left: 5%;;
-      text-transform: uppercase;
-      margin-top:-3rem;
-      margin-bottom: 4rem;
-}
-.my-name span{
-      font-family: 'Raleway', sans-serif;
-      /* font-family:  cursive; */
-      font-weight: 100;   
-      font-size: 3rem;
-      
-      margin-left: -0.5rem;
-      color:white;
-      
-}
-      
-}
-@media screen and (max-width:880px){
-.main-home-page-container{
-      /* flex-direction: column; */
-      /* flex-direction: row-reverse; */
-      margin-top: 3rem;
-      /* background-color: red; */
-    
+    /* background-color: red; */
+  }
+  .all-pages-home-container {
+    height: max-content;
+    /* margin-bottom: 4rem; */
+  }
+  .my-name {
+    font-size: 3rem;
+  }
+  .my-name span {
+    font-size: 2rem;
+  }
+  .introduction-title {
+    width: 80%;
+    margin: 1rem;
+    padding: 0;
 
-     
+    /* padding: 10px; */
+  }
+  .my-pic {
+    width: 50%;
+  }
+  .circle-contact-about-me {
+  
+justify-content: center;
+  margin: 1rem;
 }
-.all-pages-home-container{
-      height: max-content;
-      /* margin-bottom: 4rem; */
-}
-.my-name{
-      font-size: 3rem;
-}
-.my-name span{
-      font-size: 2rem;
-}
-.introduction-title{
-      width: 40%;
-      padding: 10px;
-}
-.my-pic{
-      width:50%;
-}
-}
-
-@media screen and (max-width:740px){
- .main-home-page-container{
-            flex-direction: column-reverse;
-            /* flex-direction: row-reverse; */
-            margin-top: 3rem;
-            /* background-color: red; */
-          
-      
-           
-      }
-      .introduction-title{
-            width: 100%;
-            /* background-color: red; */
-      }
-      .my-name{
-            margin-bottom: 3rem;
-
-      }
-      .enjoy-work{
-            margin:0 2rem;
-      }
-      .my-pic{
-            width: 100%;
-      }
-      .send-contact-comments{
-            margin-left: -20%;;
-      }
-      .my-logo-with-pic-contact-container{
-            display: none;
-      }
-      .all-input-contact-container{
-            width: 100%;
-            padding: 20px;
-      }
-      .contact-name-user  {
-            flex-direction: column;
-             width: 95.5%;
-      padding: 15px;
-       
-      
-      }
-      .contact-name-user input {
-            width: 100%;
-      }
-      .form-control *{
-            font-size: 0.8rem;
-      }
-
-
-}
-@media screen and (max-width:600px){
-
-      .home-about-us-section{
-            margin-top: 6rem;
-      }
-      .my-about-name{
-            margin-bottom: -2rem;
-      }
-      .marble-pic{
-            width: 100%;
-      }
-      .mother-projects-container{
-      margin-top: 7rem;
-}
-.project-name{
-      font-size: 1rem;
-      text-align: center;
-      /* color:orange; */
-}
-.demo-link{
-      width: 40px;
-      height: 40px;
-}
-.get-in-touch{
-      text-align: center;
-}
-.interested-para{
-      text-align: center;
-}
-.contact-us-page-container{
-margin-top: 6rem;
-}
-}
-@media screen and (max-width:480px){
-.my-pic{
-      width: 200px;
-      height:200px;
-    
-}
- .about-me-paragraph{
-
-/* width: 350px; */
-margin: 0 auto;
-padding: 10px;
-}
-.my-about-para{
-       font-size: 0.9rem;
-
- }
- .marble-pic{
-      width: 100%;
- }
- .me-pic-about{
-      width: 90%;
-      
- }
-.hero-my-pic{
-      width: 200px;
-      height: 200px;
-      margin-left: 1rem;
-
-}
-.main-home-page-container{
-      width: 100%;
-      /* margin-left: 6rem; */
 }
 
+@media screen and (max-width: 740px) {
+  .main-home-page-container {
+    flex-direction: column-reverse;
+    /* flex-direction: row-reverse; */
+    margin-top: 3rem;
+    /* background-color: red; */
+  }
+  .introduction-title {
+    width: 90%;
+    padding: 10px;
+  }
+  .my-name {
+    margin-bottom: 3rem;
+  }
+  .enjoy-work {
+    margin: 0 2rem;
+  }
+  .my-pic {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .send-contact-comments {
+    margin-left: -20%;
+  }
+  .my-logo-with-pic-contact-container {
+    display: none;
+  }
+  .all-input-contact-container {
+    width: 100%;
+    padding: 20px;
+  }
+  .contact-name-user {
+    flex-direction: column;
+    width: 95.5%;
+    padding: 15px;
+  }
+  .contact-name-user input {
+    width: 100%;
+  }
+  .form-control * {
+    font-size: 0.8rem;
+  }
 }
-@media screen and (max-width:295px){
-   .my-name span{
-      margin-left: 0;
-      font-size: 1rem;
-      
+@media screen and (max-width: 600px) {
+  .home-about-us-section {
+    margin-top: 6rem;
+  }
+  .my-about-name {
+    margin-bottom: -2rem;
+  }
+  .marble-pic {
+    width: 100%;
+  }
+  .mother-projects-container {
+    margin-top: 2rem;
+  }
+  .project-name {
+    font-size: 1rem;
+    text-align: center;
+    /* color:orange; */
+  }
+  .demo-link {
+    width: 40px;
+    height: 40px;
+  }
+  .get-in-touch {
+    text-align: center;
+  }
+  .interested-para {
+    text-align: center;
+  }
+  .contact-us-page-container {
+    margin-top: 6rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .my-pic {
+    width: 80%;
+    height: 250px;
+  }
+  
+  .about-me-paragraph {
+    /* width: 350px; */
+    margin: 0 auto;
+    padding: 10px;
+  }
+  .my-about-para {
+    font-size: 0.9rem;
+  }
+  .marble-pic {
+    width: 100%;
+  }
+  .me-pic-about {
+    width: 90%;
+    display: none;
+  }
+  .hero-my-pic {
+    width: 200px;
+    height: 200px;
+    margin-left: 1rem;
+  }
+  .main-home-page-container {
+    width: 100%;
+    /* margin-left: 6rem; */
+  }
+  .introduction-title {
+    width: 100%;
+    padding: 0px;
+    margin-left: -7px;
+    text-align: center;
+  }
+  .send-contact-comments {
+    margin-left: 0%;
+    margin: 2rem;
+    /* background-color: white; */
+    border: 1px solid white;
+    /* color: aqua; */
+    font-size: 0.7rem;
+      font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+  }
+  .about-image-container{
+    display: none;;
+  }
+  .circle-contact-about-me {
+  width: 40%;
+  
+}
+.contact-me-circle {
+  margin: 0 10px;
+  width: 300px;
+  height: 110px;
+  padding: 5px;
+ 
+border: 1px solid aquamarine;
+  border-radius: 100% 0% 35% 65% / 36% 55% 45% 64%;
+  background-color: white;
 
-   }
-   .my-about-name{
-     font-size: 1.6rem;
-}
-   .my-about-para{
-      font-size: 0.7rem;
-   }
-   .hero-my-pic{
-      width: 200px;
-      height: 200px;
-      margin-left: 1rem;
+  
 
+  
 }
-.full-name{
-      display: none;
 }
-   .my-pic{
-      width: 150px;
-      height:150px;
-    
+@media screen and (max-width: 295px) {
+  .my-name span {
+    /* margin-left: ; */
+    font-size: 1rem;
+  }
+  .latest-projects{
+    font-size: 1.3rem;
+  }
+  .my-about-name {
+    font-size: 1.6rem;
+  }
+  .my-about-para {
+    font-size: 0.7rem;
+  }
+  .hero-my-pic {
+    width: 200px;
+    height: 200px;
+    margin-left: 1rem;
+  }
+  .full-name {
+    display: none;
+  }
+  .my-pic {
+    /* width: 150px;
+      height:150px; */
+  }
+  .hero-my-pic {
+    width: 150px;
+    height: 150px;
+    margin-left: 1rem;
+  }
+   .circle-contact-about-me {
+  width: 50%;
+  /* background-color: red; */
+  
 }
-.hero-my-pic{
-      width: 150px;
-      height: 150px;
-      margin-left: 1rem;
+.contact-me-circle {
+  margin: 0 10px;
+  width: 100%;
+  height: 110px;
+  padding: 5px;
+ 
+border: 1px solid aquamarine;
+  border-radius: 100% 0% 35% 65% / 36% 55% 45% 64%;
+  background-color: white;
 
+  
+
+  
 }
 }
