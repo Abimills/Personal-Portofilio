@@ -2,10 +2,12 @@ import React from "react";
 import "../../Pages/Home/home.css";
 import { useEffect } from "react";
 import { useState } from "react";
-import abel from "./abel.png";
+import abel from "../../Components/HomeLandingPage/abelino.png";
 import aboutMe from "../../Components/HomeLandingPage/home-abel.png";
+import { useNavigate } from "react-router-dom";
 const AboutPage = () => {
   const [text, setText] = useState("");
+  const navigate = useNavigate();
   const aboutMeText = `Ass a junior fullstack web developer, I've had a thrilling
     experience working with code. From my early days learning HTML and
     CSS, to diving deeper into JavaScript and other programming
@@ -41,7 +43,12 @@ const AboutPage = () => {
         </div>
         <div className="about-me-pic-container">
           <div className="circle-contact-about-me">
-            <button className="contact-me-circle">contact me</button>
+            <button
+              className="contact-me-circle"
+              onClick={() => navigate("/contact")}
+            >
+              contact me
+            </button>
             <div className="about-image-container">
               <img src={abel} alt="" className="me-pic-about" />
             </div>

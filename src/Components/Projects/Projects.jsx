@@ -100,16 +100,11 @@ const Projects = () => {
   return (
     <>
       <div className="mother-projects-container">
-        <h1 className="latest-projects">{" < My latest Projects />"}</h1>
+        <div className="mother-header">
+          <div className="latest-header-container"></div>
+          <h1 className="latest-projects"> My latest Projects </h1>
+        </div>
         <div className="filter-div">
-          <h3
-            onClick={() => handleClick("game")}
-            className={`${
-              activeCategory === "game" ? "active-cat" : "passive-cat"
-            }`}
-          >
-            Games
-          </h3>
           <h3
             onClick={() => handleClick("frontend")}
             className={`${
@@ -126,6 +121,15 @@ const Projects = () => {
           >
             Fullstack
           </h3>
+          <h3
+            onClick={() => handleClick("game")}
+            className={`${
+              activeCategory === "game" ? "active-cat" : "passive-cat"
+            }`}
+          >
+            Games
+          </h3>
+
           <h3
             onClick={() => handleClick("vanilla")}
             className={`${

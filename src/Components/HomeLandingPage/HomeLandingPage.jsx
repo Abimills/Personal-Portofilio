@@ -1,7 +1,17 @@
 import React from "react";
 import "../../Pages/Home/home.css";
-import homeAbel from "./new-abel.png";
+import homeAbel from "./abelino.png";
+import { useNavigate } from "react-router-dom";
+import { saveAs } from "file-saver";
+import PdfFile from "./resume.pdf";
+import { FaFileDownload } from "react-icons/fa";
+
 const HomeLandingPage = () => {
+  const handleDownload = () => {
+    saveAs(PdfFile, "downloaded_file.pdf");
+  };
+
+  const navigate = useNavigate();
   return (
     <div className="main-home-page-container">
       <div className="introduction-title">
@@ -13,22 +23,25 @@ const HomeLandingPage = () => {
           a fullstack web <span className="developer">developer</span>
         </h1>
         <p className="enjoy-work">
-          {
-            "< Enjoy what you do and you will never work a day in your life. />"
-          }
+          {"< Enjoy what you do and you will never work a day in your life. />"}
         </p>
         <div className="contact-me-div-btn">
-          <button className="send-contact-comments">Contact me</button>
+          <button
+            className="send-contact-comments"
+            onClick={() => navigate("/contact")}
+          >
+            Contact me
+          </button>
         </div>
       </div>
 
       <div className="my-pic">
         <img className="hero-my-pic" src={homeAbel} alt="" />
         <div className="full-name">
-          <p>Abel</p>
-          <p className="last-name">
-            Tek<span className="part-last-name">le</span>
-          </p>
+          <button onClick={handleDownload} className="download-cv">
+            cv <FaFileDownload />{" "}
+          </button>
+
           <div className="circle-orange"></div>
         </div>
       </div>

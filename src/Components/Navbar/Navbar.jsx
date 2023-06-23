@@ -1,7 +1,7 @@
 import React from "react";
 import "./navbar.css";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AiFillHome } from "react-icons/ai";
 import { BsFillPersonFill } from "react-icons/bs";
 import { MdOutlineWork } from "react-icons/md";
@@ -13,7 +13,7 @@ const Navbar = () => {
   const [activeBar, setActiveBar] = useState("home");
   const [openBar, setOpenBar] = useState(false);
   const [isClose, setIsClose] = useState(false);
-
+  const navigate = useNavigate();
 
   // useEffect(() => {
   //   window.scrollTo(0, 100);
@@ -21,7 +21,7 @@ const Navbar = () => {
   return (
     <main className="navbar-main-section">
       <nav className="navigation-container">
-        <div className="logo-name">
+        <div className="logo-name" onClick={() => navigate("/")}>
           <img
             src="https://images.squarespace-cdn.com/content/v1/60807dd06ef2ab0bfb72765e/1622308613732-G067EXJQEWW1XZBTHQBH/BlueWolfLogo-21-JS+transparent+v2.-06.png"
             alt=""

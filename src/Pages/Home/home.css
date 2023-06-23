@@ -29,6 +29,7 @@ background-size: contain; */
   color: black;
   margin-top: 6%;
   margin-left: 20%;
+
   font-size: 8rem;
   text-transform: uppercase;
   /* font-family:  cursive; */
@@ -121,17 +122,14 @@ background-size: contain; */
   0% {
     transform: translateY(0);
     border-radius: 14% 86% 35% 65% / 59% 74% 26% 41%;
-    
   }
   50% {
     transform: translateY(-10px);
     border-radius: 100% 0% 35% 65% / 36% 55% 45% 64%;
-  
   }
   100% {
     border-radius: 14% 86% 35% 65% / 59% 74% 26% 41%;
     transform: translateY(0);
-    
   }
 }
 
@@ -148,7 +146,13 @@ background-size: contain; */
 .hero-my-pic {
   width: 500px;
   height: 300px;
-  object-fit: contain;
+  object-fit: cover;
+  border-radius: 67% 33% 35% 65% / 36% 19% 81% 64%;
+
+  /* box-shadow: inset 20px 20px 20px 20px rgba(11, 220, 213, 0.05),
+    25px 35px 20px rgba(0, 229, 255, 0.05),
+    25px 30px 30px rgba(2, 223, 248, 0.05),
+    inset -20px -20px 25px rgba(13, 207, 225, 0.5); */
   /* margin-left: -13rem; */
   /* background-color: red; */
   /* margin-top: -10.6rem; */
@@ -219,8 +223,8 @@ background-size: contain; */
   width: 100px;
   height: 100px;
   padding: 5px;
- 
-border: 1px solid aquamarine;
+
+  border: 1px solid aquamarine;
   border-radius: 100% 0% 35% 65% / 36% 55% 45% 64%;
   background-color: white;
   /* margin-left: -2rem; */
@@ -241,17 +245,19 @@ border: 1px solid aquamarine;
 .contact-me-circle:hover {
   border-radius: 14% 86% 35% 65% / 59% 74% 26% 41%;
 }
-.about-image-container{
+.about-image-container {
   width: 300px;
-  height: 300px;
+  height: 350px;
   /* background-color: aquamarine; */
 }
 .me-pic-about {
-  width: 60%;
+  /* width: 60%; */
   height: 100%;
   object-fit: cover;
   margin: 0 2rem;
- border-radius: 10px;
+  border-radius: 10px;
+  animation: float1 3s ease-in-out infinite;
+
   /* border-radius: 67% 33% 35% 65% / 36% 19% 81% 64%; */
   /* border-radius: 50%; */
 }
@@ -269,7 +275,7 @@ border: 1px solid aquamarine;
 .my-about-para {
   max-width: 600px;
   font-family: "Lobster", cursive;
-    font-family: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif;
 
   font-weight: 400;
   font-size: 1.2rem;
@@ -377,14 +383,38 @@ a {
 .mother-projects-container {
   width: 100%;
 }
+.mother-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.latest-header-container {
+  width: 10px;
+  height: 55px;
+  background-color: orange;
+  /* display: flex;
+     align-items: center;
+     justify-content: center; */
+  /* margin: 0 auto; */
+  /* margin-top: 3rem; */
+}
 .latest-projects {
   color: aqua;
-  text-align: center;
+  /* text-align: center; */
+  width: max-content;
+  margin-left: 0rem;
   text-transform: uppercase;
   font-family: "Raleway", sans-serif;
   font-weight: 100;
-  font-size: 1.5rem;
-  margin-top: 3rem;
+  /* font-size: 1.5rem; */
+  /* margin-top: 3rem; */
+  color: aquamarine;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  letter-spacing: 6px;
 }
 .underline-project {
   display: none;
@@ -428,7 +458,8 @@ a {
   background-color: aquamarine;
   text-transform: uppercase;
   border: 1px solid white;
-  animation: float 3s ease-in-out infinite;
+  animation: float1 3s ease-in-out infinite;
+  width: max-content;
 
   padding: 15px 25px;
   border-radius: 28% 72% 69% 31% / 20% 42% 58% 80%;
@@ -468,7 +499,7 @@ a {
   margin-top: 8rem;
 }
 .get-in-touch {
-  color:aquamarine;
+  color: aquamarine;
   text-transform: uppercase;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -477,8 +508,8 @@ a {
 .interested-para {
   font-family: "Raleway", sans-serif;
   font-weight: 100;
-  color:black;
-  background-color: white;;
+  color: black;
+  background-color: white;
   padding: 10px;
   text-transform: uppercase;
 }
@@ -504,7 +535,7 @@ a {
   padding: 15px;
   outline: none;
   color: black;
-
+  text-indent: 40px;
 }
 .contact-name-user input:hover {
   background-color: transparent;
@@ -519,8 +550,9 @@ a {
   border: 1px solid aquamarine;
   color: white;
   outline: none;
-   color: black;
-  background-color: white;
+  color: black;
+  text-indent: 40px;
+  /* background-color: white; */
 }
 
 .phone-container {
@@ -533,9 +565,8 @@ a {
   border: 1px solid aquamarine;
   margin-top: 1rem;
   color: black;
-  background-color: white;
   outline: none;
-
+  text-indent: 40px;
 }
 .text-area-container {
   width: 95.5%;
@@ -546,10 +577,11 @@ a {
   background-color: transparent;
   border: 1px solid aquamarine;
   margin-top: 1rem;
- 
+
   outline: none;
   color: black;
-  background-color: white;
+  text-indent: 40px;
+  /* background-color: white; */
 }
 .send-btn-container {
   width: 100%;
@@ -592,7 +624,28 @@ a {
 .my-about-name {
   text-transform: uppercase;
   text-align: center;
-  color:aquamarine;
+  color: aquamarine;
+}
+.download-cv:hover {
+  border: 1px dotted aquamarine;
+}
+.download-cv {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  color: black;
+  transition: 0.7s ease-in-out;
+  cursor: pointer;
+  font-family: "Lobster", cursive;
+  font-weight: 100;
+
+  text-transform: uppercase;
+  background-color: aquamarine;
+  padding: 4px 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
 @keyframes cursor {
@@ -677,6 +730,9 @@ a {
 
     /* background-color: red; */
   }
+  .hero-my-pic {
+    object-fit: contain;
+  }
   .all-pages-home-container {
     height: max-content;
     /* margin-bottom: 4rem; */
@@ -698,10 +754,9 @@ a {
     width: 50%;
   }
   .circle-contact-about-me {
-  
-justify-content: center;
-  margin: 1rem;
-}
+    justify-content: center;
+    margin: 1rem;
+  }
 }
 
 @media screen and (max-width: 740px) {
@@ -754,6 +809,9 @@ justify-content: center;
   .my-about-name {
     margin-bottom: -2rem;
   }
+  .latest-projects {
+    font-size: 1.4rem;
+  }
   .marble-pic {
     width: 100%;
   }
@@ -776,7 +834,14 @@ justify-content: center;
     text-align: center;
   }
   .contact-us-page-container {
-    margin-top: 6rem;
+    margin: 0 auto;
+    margin-top: -3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+    margin-left: -5px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -784,7 +849,7 @@ justify-content: center;
     width: 80%;
     height: 250px;
   }
-  
+
   .about-me-paragraph {
     /* width: 350px; */
     margin: 0 auto;
@@ -822,39 +887,37 @@ justify-content: center;
     border: 1px solid white;
     /* color: aqua; */
     font-size: 0.7rem;
-      font-family: "Raleway", sans-serif;
-        font-weight: 600;
-        text-transform: uppercase;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
   }
-  .about-image-container{
-    display: none;;
+  .about-image-container {
+    display: none;
   }
   .circle-contact-about-me {
-  width: 40%;
-  
-}
-.contact-me-circle {
-  margin: 0 10px;
-  width: 300px;
-  height: 110px;
-  padding: 5px;
- 
-border: 1px solid aquamarine;
-  border-radius: 100% 0% 35% 65% / 36% 55% 45% 64%;
-  background-color: white;
+    width: 40%;
+  }
+  .contact-me-circle {
+    margin: 0 10px;
+    width: 300px;
+    height: 110px;
+    padding: 5px;
 
-  
-
-  
-}
+    border: 1px solid aquamarine;
+    border-radius: 100% 0% 35% 65% / 36% 55% 45% 64%;
+    background-color: white;
+  }
+  .latest-projects {
+    font-size: 1rem;
+  }
 }
 @media screen and (max-width: 295px) {
   .my-name span {
     /* margin-left: ; */
     font-size: 1rem;
   }
-  .latest-projects{
-    font-size: 1.3rem;
+  .latest-projects {
+    font-size: 0.8rem;
   }
   .my-about-name {
     font-size: 1.6rem;
@@ -870,6 +933,7 @@ border: 1px solid aquamarine;
   .full-name {
     display: none;
   }
+
   .my-pic {
     /* width: 150px;
       height:150px; */
@@ -879,23 +943,18 @@ border: 1px solid aquamarine;
     height: 150px;
     margin-left: 1rem;
   }
-   .circle-contact-about-me {
-  width: 50%;
-  /* background-color: red; */
-  
-}
-.contact-me-circle {
-  margin: 0 10px;
-  width: 100%;
-  height: 110px;
-  padding: 5px;
- 
-border: 1px solid aquamarine;
-  border-radius: 100% 0% 35% 65% / 36% 55% 45% 64%;
-  background-color: white;
+  .circle-contact-about-me {
+    width: 50%;
+    /* background-color: red; */
+  }
+  .contact-me-circle {
+    margin: 0 10px;
+    width: 100%;
+    height: 110px;
+    padding: 5px;
 
-  
-
-  
-}
+    border: 1px solid aquamarine;
+    border-radius: 100% 0% 35% 65% / 36% 55% 45% 64%;
+    background-color: white;
+  }
 }
